@@ -6,6 +6,7 @@
     <title>Окновияз</title>
     <link rel="icon" href="./img/window.svg">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -21,15 +22,24 @@
                     </div>
                 </div>
                 <!-- /.header__logo -->
-                <div class="header__contacts">
-                    
+                <div class="header__contacts contacts">
+                    <img src="./img/main/phone.png" alt="Телефон" class="contacts__img">
+                    <div class="contacts__numbers">
+                        <a href="tel:+7(495)5326999" class="contacts__phone"><small class="contacts__phone--small">+7/495/</small>532-69-99</a>
+                        <span class="contacts__w-hours">Работаем: с 9-00 до 21-00</span>
+                    </div>
+                    <!-- /.contacs__numbers -->
                 </div>
                 <!-- /.header__contacts -->
+                <button class="button header__button">Заказать звонок!</button>
             </div>
             <!-- /.header__wrapper -->
         </div>
         <!-- /.container -->
     </header>
     <!-- /.header -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
