@@ -5,6 +5,41 @@
     padding-top: 1.71rem
     &__nav
         background-color: $d-b
+    &__title
+        text-align: center
+        color: $light
+        font-weight: 400
+        font-size: 3.14rem
+        letter-spacing: 1.2px
+    &__subtitle
+        color: $light
+        text-align: center
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 1.71rem
+        &--item
+            margin-right: 4.28rem
+            position: relative
+            &:last-child
+                margin-right: 0
+            &::before
+                content: ''
+                position: absolute
+                width: 0.5rem
+                height: 0.5rem
+                background-color: $light
+                border-radius: 50%  
+                top: 40%
+                left: -1rem
+            &::after
+                content: ''
+                position: absolute
+                width: 0.5rem
+                height: 0.5rem
+                background-color: $light
+                border-radius: 50%
+                top: 40%
+                margin-left: 0.64rem
 .nav
     border-top: 4px solid $light
     border-bottom: 4px solid $light
@@ -52,5 +87,7 @@
             padding-right: 0
 .sticky
     position: fixed
-    top: 0;
+    top: 0
     width: 100%
+
+
