@@ -538,5 +538,11 @@ template {
   top: 0;
   width: 100%; }
 
+.logo__main-link {
+  text-decoration: none;
+  transition: all 0.3s; }
+  .logo__main-link:hover {
+    transform: scale(1.1); }
+
 .swiper-slide {
   padding-top: 3rem; }
