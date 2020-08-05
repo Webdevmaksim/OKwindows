@@ -353,10 +353,15 @@ template {
 
 .header__title {
   margin: 0;
-  margin-bottom: 0.57rem; }
+  margin-bottom: 0.57rem;
+  color: #272727;
+  font-size: 1.71rem;
+  margin-bottom: 0rem; }
 
 .header__subtitle {
-  color: #0083b5; }
+  color: #0083b5;
+  font-weight: 400;
+  font-size: 0.92rem; }
 
 .header__button {
   font-size: 1.21rem;
@@ -368,16 +373,83 @@ template {
 
 .contacts {
   display: flex;
-  margin-right: 2.1rem; }
+  margin-right: 2.5rem; }
   .contacts__phone {
-    margin-bottom: 0.57rem;
+    margin-bottom: 0;
     color: #272727;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 1.71rem;
+    line-height: 1.64rem; }
     .contacts__phone--small {
-      color: #0083b5; }
+      color: #0083b5;
+      font-size: 1.21rem;
+      margin-right: 2px; }
   .contacts__img {
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem; }
   .contacts__numbers {
     display: flex;
     flex-direction: column;
     align-items: flex-end; }
+  .contacts__w-hours {
+    font-size: 0.92rem;
+    font-weight: 400;
+    color: #272727;
+    line-height: 1.64rem; }
+
+.hero {
+  background: url("../img/main/hero-bg.png") center no-repeat;
+  background-size: cover;
+  min-height: 44.21rem;
+  padding-top: 1.71rem; }
+  .hero__nav {
+    background-color: #0083b5; }
+
+.nav {
+  border-top: 4px solid #FFFFFF;
+  border-bottom: 4px solid #FFFFFF; }
+  .nav__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 3.75rem; }
+  .nav__item {
+    position: relative;
+    display: flex;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-right: 1.57rem;
+    padding-left: 1.57rem;
+    min-height: 1.8rem;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: all 0.2s; }
+    .nav__item:hover {
+      color: #f39c12;
+      text-decoration: underline; }
+    .nav__item:nth-of-type(n + 2)::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: url("../img/main/border-l.png") center no-repeat; }
+    .nav__item:nth-of-type(-1n+6)::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: url("../img/main/border-r.png") center no-repeat; }
+    .nav__item:first-child {
+      padding-left: 0; }
+    .nav__item:last-child {
+      padding-right: 0; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
