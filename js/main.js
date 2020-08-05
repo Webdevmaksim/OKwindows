@@ -15,5 +15,15 @@ $(document).ready(function () {
         } else {
             navbar.classList.remove("sticky");
         }
-} 
+    }
+     //slider
+     var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 40,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
 });
