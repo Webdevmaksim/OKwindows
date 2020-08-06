@@ -22,8 +22,8 @@ $(document).ready(function () {
         slidesPerView: 2,
         spaceBetween: 40,
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.hero__slider-control-next',
+          prevEl: '.hero__slider-control-prev',
         },
       });
 });

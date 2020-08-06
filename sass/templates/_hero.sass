@@ -3,6 +3,32 @@
     background-size: cover
     min-height: 44.21rem
     padding-top: 1.71rem
+    &__slider
+        position: relative
+        &-control
+            width: 5.64rem
+            height: 5.64rem
+            position: absolute
+            // border: 2px solid red
+            top: 3.5rem
+            background: url('../img/main/arrow-static.png') center no-repeat
+            background-size: cover
+            transition: all 0.2s
+            &:hover
+                cursor: pointer
+            &-next
+                transform: rotate(180deg)
+                right: -9rem
+                &:hover
+                    background: url('../img/main/arrow-active.png') center no-repeat
+                    background-size: cover
+                    transform: rotate(0deg)
+            &-prev
+                left: -9rem
+                &:hover
+                    background: url('../img/main/arrow-active.png') center no-repeat
+                    background-size: cover
+                    transform: rotate(180deg)
     &__nav
         background-color: $d-b
     &__title
@@ -61,6 +87,8 @@
             top: 0
             left: 50%
             transform: translate(-50%, -50%)
+    
+
 .nav
     border-top: 4px solid $light
     border-bottom: 4px solid $light
@@ -144,4 +172,8 @@
             transform: scale(1.1)
 .swiper-slide
     padding-top: 3rem
+
+.sticky + .hero 
+  padding-top: 90px
+
 

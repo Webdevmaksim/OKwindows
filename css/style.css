@@ -10,7 +10,8 @@ body {
   font-size: 1rem;
   background: url("../img/body.bg.png") center no-repeat;
   background-size: cover;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-attachment: fixed; }
 
 img {
   max-width: 100%; }
@@ -403,6 +404,31 @@ template {
   background-size: cover;
   min-height: 44.21rem;
   padding-top: 1.71rem; }
+  .hero__slider {
+    position: relative; }
+    .hero__slider-control {
+      width: 5.64rem;
+      height: 5.64rem;
+      position: absolute;
+      top: 3.5rem;
+      background: url("../img/main/arrow-static.png") center no-repeat;
+      background-size: cover;
+      transition: all 0.2s; }
+      .hero__slider-control:hover {
+        cursor: pointer; }
+      .hero__slider-control-next {
+        transform: rotate(180deg);
+        right: -9rem; }
+        .hero__slider-control-next:hover {
+          background: url("../img/main/arrow-active.png") center no-repeat;
+          background-size: cover;
+          transform: rotate(0deg); }
+      .hero__slider-control-prev {
+        left: -9rem; }
+        .hero__slider-control-prev:hover {
+          background: url("../img/main/arrow-active.png") center no-repeat;
+          background-size: cover;
+          transform: rotate(180deg); }
   .hero__nav {
     background-color: #0083b5; }
   .hero__title {
@@ -546,3 +572,9 @@ template {
 
 .swiper-slide {
   padding-top: 3rem; }
+
+.sticky + .hero {
+  padding-top: 90px; }
+
+.window-types {
+  min-height: 1700px; }
