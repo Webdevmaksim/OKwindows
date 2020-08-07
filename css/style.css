@@ -413,7 +413,8 @@ template {
       top: 3.5rem;
       background: url("../img/main/arrow-static.png") center no-repeat;
       background-size: cover;
-      transition: all 0.2s; }
+      transition: all 0.2s;
+      outline: none; }
       .hero__slider-control:hover {
         cursor: pointer; }
       .hero__slider-control-next {
@@ -562,7 +563,8 @@ template {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
 
 .logo__main-link {
   text-decoration: none;
@@ -574,7 +576,56 @@ template {
   padding-top: 3rem; }
 
 .sticky + .hero {
-  padding-top: 90px; }
+  padding-top: 40px; }
 
 .window-types {
-  min-height: 1700px; }
+  padding-top: 3.28rem; }
+  .window-types__title {
+    margin: 0;
+    text-align: center;
+    font-size: 2.14rem;
+    font-weight: 400;
+    line-height: 2.28rem;
+    margin-bottom: 2.92rem; }
+
+.card-block {
+  display: flex;
+  flex-wrap: wrap; }
+  .card-block__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0083b5;
+    max-width: 15rem;
+    text-align: center;
+    line-height: 1.42rem;
+    font-size: 1.28rem; }
+  .card-block__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%; }
+  .card-block__price {
+    border: 2px dashed #f39c12;
+    background-color: #FFFFFF;
+    padding: 0.85rem 2.14rem;
+    font-weight: bold;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    line-height: 1.42rem;
+    font-size: 1.28rem; }
+
+.why {
+  background: url("../img/why/why-bg.png") center no-repeat;
+  background-size: cover;
+  padding-top: 3.07rem;
+  padding-bottom: 2.71rem;
+  text-align: center;
+  color: #FFFFFF; }
+  .why__title {
+    font-size: 2.14rem;
+    font-weight: 400;
+    line-height: 2.28rem; }
+  .why__text {
+    max-width: 36rem;
+    margin: 0 auto;
+    font-size: 1.42rem; }
