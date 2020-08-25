@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -560,6 +561,68 @@ template {
   .slide__button:hover {
     background-color: #e67e22; }
 
+.slide__promo-block {
+  display: flex;
+  justify-content: flex-end; }
+  .slide__promo-block::before {
+    content: 'До конца акции осталось времени:';
+    width: 13.42rem;
+    height: 3.35rem;
+    margin-right: 1rem;
+    color: #FFFFFF;
+    background: url("../img/main/promo-bg.png") center no-repeat;
+    background-size: cover;
+    font-size: 1rem;
+    padding-top: 0.60rem;
+    padding-bottom: 0.71rem;
+    padding-left: 1.57rem; }
+
+.slide__promo-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2.14rem;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  width: 3.21rem;
+  height: 3.42rem;
+  border-radius: 7px;
+  margin-right: 1.21rem;
+  margin-bottom: 2.5rem;
+  position: relative; }
+  .slide__promo-cell:last-child {
+    margin-right: 0; }
+  .slide__promo-cell:first-child::before {
+    display: none; }
+  .slide__promo-cell::before {
+    content: '';
+    width: 0.33rem;
+    height: 1.42rem;
+    position: absolute;
+    left: -1rem;
+    background: url("../img/main/promo-devider.png") center no-repeat; }
+  .slide__promo-cell:nth-child(1)::after {
+    content: 'дней';
+    font-size: 0.64rem;
+    position: absolute;
+    bottom: -1.3rem; }
+  .slide__promo-cell:nth-child(2)::after {
+    content: 'часов';
+    font-size: 0.64rem;
+    position: absolute;
+    bottom: -1.3rem; }
+  .slide__promo-cell:nth-child(3)::after {
+    content: 'минут';
+    font-size: 0.64rem;
+    position: absolute;
+    bottom: -1.3rem; }
+  .slide__promo-cell:nth-child(4)::after {
+    content: 'секунд';
+    font-size: 0.64rem;
+    position: absolute;
+    bottom: -1.3rem; }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -620,7 +683,8 @@ template {
   padding-top: 3.07rem;
   padding-bottom: 2.71rem;
   text-align: center;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  min-height: 28rem; }
   .why__title {
     font-size: 2.14rem;
     font-weight: 400;
