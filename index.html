@@ -7,6 +7,7 @@
     <link rel="icon" href="./img/window.svg">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -182,84 +183,406 @@
                 По Вашему желанию мы можем изготовить окна любой формы, размера, комплектации и цвета!
             </h2>
             <div class="window-types__card-block card-block">
-                <div class="card-block__card">
-                    <h2 class="card-block__title">
-                        одностворчатое окно
-                    </h2>
-                    <img src="./img/main/1-pane.png" alt="одно-окно" class="card-block__image">
-                    <span class="card-block__price">
-                        цена от: 4 885р
-                    </span>
+                <div class="card-block__col">
+                    <div class="card-block__card">
+                        <h2 class="card-block__title">
+                            одностворчатое окно
+                        </h2>
+                        <img src="./img/main/1-pane.png" alt="одно-окно" class="card-block__image">
+                        <span class="card-block__price">
+                            цена от: 4 885р
+                        </span>
+                    </div>
+                    <!-- /.card-block__card -->
                 </div>
-                <!-- /.card-block__card -->
-                <div class="card-block__card">
-                    <h2 class="card-block__title">
-                        двухстворчатое окно
-                    </h2>
-                    <img src="./img/main/2-pane-window.png" alt="2-окно" class="card-block__image">
-                    <span class="card-block__price">
-                        цена от: 9 497р
-                    </span>
+                <!-- /.card-block__col -->
+                <div class="card-block__col">
+                    <div class="card-block__card">
+                        <h2 class="card-block__title">
+                            двухстворчатое окно
+                        </h2>
+                        <img src="./img/main/2-pane-window.png" alt="2-окно" class="card-block__image">
+                        <span class="card-block__price">
+                            цена от: 9 497р
+                        </span>
+                    </div>
+                    <!-- /.card-block__card -->
                 </div>
-                <!-- /.card-block__card -->
-                <div class="card-block__card">
-                    <h2 class="card-block__title">
-                        трехстворчатое окно
-                    </h2>
-                    <img src="./img/main/3-pane-window.png" alt="3-окно" class="card-block__image">
-                    <span class="card-block__price">
-                        цена от: 11 251р
-                    </span>
+                <!-- /.card-block__col -->
+                <div class="card-block__col">
+                    <div class="card-block__card">
+                        <h2 class="card-block__title">
+                            трехстворчатое окно
+                        </h2>
+                        <img src="./img/main/3-pane-window.png" alt="3-окно" class="card-block__image">
+                        <span class="card-block__price">
+                            цена от: 11 251р
+                        </span>
+                    </div>
+                    <!-- /.card-block__card -->
                 </div>
-                <!-- /.card-block__card -->
-                <div class="card-block__card">
-                    <h2 class="card-block__title">
-                        простая Балконная дверь
-                    </h2>
-                    <img src="./img/main/balcony-door.png" alt="маленьеий-балкон" class="card-block__image">
-                    <span class="card-block__price">
-                        цена от: 6 962р
-                    </span>
+                <!-- /.card-block__col -->
+                <div class="card-block__col">
+                    <div class="card-block__card">
+                        <h2 class="card-block__title">
+                            простая Балконная дверь
+                        </h2>
+                        <img src="./img/main/balcony-door.png" alt="маленьеий-балкон" class="card-block__image">
+                        <span class="card-block__price">
+                            цена от: 6 962р
+                        </span>
+                    </div>
+                    <!-- /.card-block__card -->
                 </div>
-                <!-- /.card-block__card -->
-                <div class="card-block__card">
-                    <h2 class="card-block__title">
-                        балконный блок с одно-тым окном
-                    </h2>
-                    <img src="./img/main/2-pane-balcony.png" alt="средний-балкон" class="card-block__image">
-                    <span class="card-block__price">
-                        цена от: 12 137р
-                    </span>
+                <!-- /.card-block__col -->
+                <div class="card-block__col">
+                    <div class="card-block__card">
+                        <h2 class="card-block__title">
+                            балконный блок с одно-тым окном
+                        </h2>
+                        <img src="./img/main/2-pane-balcony.png" alt="средний-балкон" class="card-block__image">
+                        <span class="card-block__price">
+                            цена от: 12 137р
+                        </span>
+                    </div>
+                    <!-- /.card-block__card -->
                 </div>
-                <!-- /.card-block__card -->
-                <div class="card-block__card">
-                    <h2 class="card-block__title">
-                        балконный блок с двух-тым окном
-                    </h2>
-                    <img src="./img/main/3-pane-balcony.png" alt="большой-балкон" class="card-block__image">
-                    <span class="card-block__price">
-                        цена от: 14 665р
-                    </span>
+                <!-- /.card-block__col -->
+                <div class="card-block__col">
+                    <div class="card-block__card">
+                        <h2 class="card-block__title">
+                            балконный блок с двух-тым окном
+                        </h2>
+                        <img src="./img/main/3-pane-balcony.png" alt="большой-балкон" class="card-block__image card-block__image--last">
+                        <span class="card-block__price">
+                            цена от: 14 665р
+                        </span>
+                    </div>
+                    <!-- /.card-block__card -->
                 </div>
-                <!-- /.card-block__card -->
+                <!-- /.card-block__col -->
             </div>
             <!-- /.window-types__card-block -->
+            <div class="window-types__window-description window-description">
+                <p class="window-description__text">
+                    Точная цена на Ваши окна будет зависеть от типа профиля, стеклопакета, количества глухих и открывающихся створок, дополнительной фурнитуры. 
+                </p>
+                <p class="window-description__consult">
+                    Чтобы получить консультацию по оптимальному для Вас решени и расчитать цену позвоните нам по телефонам:
+                </p> 
+                <!-- /.description__text -->
+                <p class="window-description__contacts">
+                    +7/495/ 532-69-99, 8/800/ 666-99-87 <br>
+                    Или оставьте заявку и мы с вами свяжемся сами:
+                </p>
+                <!-- /.description__contacts -->
+            </div>
+            <!-- /.window-type__description -->
+            <form class="window-types__form main-form form">
+                <div class="main-form__input-group input-group">
+                    <input placeholder="Введите ваше имя..." name="windowName" type="text" class="input window-types__input input__name">
+                </div>
+                <!-- /.input__group -->
+                <div class="main-form__input-group input-group">
+                    <input placeholder="Введите ваш телефон..." name="windowPhone" type="tel" class="input window-types__input input__phone">
+                </div>
+                <!-- /.input__group -->
+                <button class="button main-form__button">
+                    заказать консультацию!
+                </button>
+                <p class="policy main-form__policy">
+                    политика конфидициальности
+                    <span class="policy__text">
+                        Ваши данные не будут разглашены третьим лицам, согласно закону РФ “О не разглашении персональных данных”
+                    </span>
+                </p>
+            </form>
+            <!-- /.window-types__form form -->
+            
         </div>
         <!-- /.container -->
     </section>
     <!-- /.window-types -->
     <section class="why">
-        <h2 class="why__title">
-            Почему более 10 000 клиентов выбрали нас?
-        </h2>
-        <!-- /.why__title -->
-        <p class="why__text">
-            ГОСТ Все монтажные работы выполняются по ГОСТу Поставщики Являясь официальным поставщиком ведущих оконных систем, мы гаратирует минимальные цены Гарантия Своевременное соблюдение гарантийных обязательств на оконные системы Обслуживание Бесплатное гарантийное обслуживание в течении двух лет	Доставка Доставка и монтаж осуществляются в удобное для клиентов время</p>
-        <!-- /.why__text -->
+        <div class="container">
+            <h2 class="why__title">
+                Почему более 10 000 клиентов выбрали нас?
+            </h2>
+            <!-- /.why__title -->
+           <div class="why__text">
+            <h5 class="why__subtitle">
+                ГОСТ
+            </h5>
+            <span class="why__description">
+                Все монтажные работы выполняются по ГОСТу
+            </span>
+            <h5 class="why__subtitle">
+                Поставщики
+            </h5>
+            <span class="why__description">
+                Являясь официальным поставщиком ведущих оконных систем, мы гаратирует минимальные цены
+            </span>
+            <h5 class="why__subtitle">
+                Гарантия
+            </h5>
+            <span class="why__description">
+                Своевременное соблюдение гарантийных обязательств на оконные системы
+            </span>
+            <h5 class="why__subtitle">
+                Обслуживание
+            </h5>
+            <span class="why__description">
+                Бесплатное гарантийное обслуживание в течении двух лет
+            </span>
+            <h5 class="why__subtitle">
+                Доставка
+            </h5>
+            <span class="why__description">
+                Доставка и монтаж осуществляются в удобное для клиентов время
+            </span>
+           </div>
+           <!-- /.why__text -->
+        </div>
     </section>
     <!-- /.why -->
+    <section class="warranty">
+        <div class="container">
+            <h2 class="warranty__title">
+                Гарантии на продукцию и монтажные работы!
+            </h2>
+            <div class="warranty__row">
+                <div class="warranty__col">
+                    <div class="warranty__item">
+                        <div class="warranty__image">
+                            <img src="./img/warranty/warranty--60.png" alt="" class="warranty__img">
+                        </div>
+                        <span class="warranty__item-text">
+                            гарантия на стеклопакеты   60 лет
+
+                        </span>
+                    </div>
+                    <!-- /.warranty__item -->
+                </div>
+                <div class="warranty__col">
+                    <div class="warranty__item">
+                        <div class="warranty__image">
+                            <img src="./img/warranty/warranty--2.png" alt="" class="warranty__img">
+                        </div>
+                        <span class="warranty__item-text">
+                            гарантия на монтаж 2 года
+                        </span>
+                    </div>
+                    <!-- /.warranty__item -->
+                </div>
+                <div class="warranty__col">
+                    <div class="warranty__item">
+                        <div class="warranty__image">
+                            <img src="./img/warranty/warranty--40.png" alt="" class="warranty__img">
+                        </div>
+                        <span class="warranty__item-text">
+                            гарантия на ПВХ профиль 40 лет
+                        </span>
+                    </div>
+                    <!-- /.warranty__item -->
+                </div>
+            </div>
+            <!-- /.warranty__row -->
+            <div class="warranty__row">
+                <div class="warranty__agent">
+                    <img src="./img/warranty/warranty--agent.png" alt="агент"></div>
+                <div class="warranty__description">
+                    <h3 class="warranty__subtitle">
+                        Иструкция по эксплуатации оконных конструкций
+                    </h3>
+                    <ol class="warranty__list">
+                        <li class="warranty__list-item">
+                            Не допускайте механических воздействий на профиль оконных блоков - ударов, царапин и т.д.
+                        </li>
+                        <li class="warranty__list-item">
+                            Пластиковые окна и балконные двери необходимо очищать и смазывать движущиеся части фурнитуры
+                        </li>
+                        <li class="warranty__list-item">
+                            Поворачивать ручки открывания\закрывания окон и дверей необходимо только в прижатом положении створок
+                        </li>
+                        <li class="warranty__list-item">
+                            Не вставляйте между рамой и створкой посторонние предметы
+                        </li>
+                        <li class="warranty__list-item">
+                            Не оставляйте окна и балконные двери в открытом положении при сильном ветре
+                        </li>
+                        <li class="warranty__list-item">
+                            Необходимо проветривать все комнаты в квартире 2-3 раза в день по 20 минут, для избежания конденсата
+                        </li>
+                        <li class="warranty__list-item">
+                            Температура в помещении в зимний период не должна опускаться ниже +18°C
+                        </li>
+                        <li class="warranty__list-item">
+                            Поддерживать оптимальную влажность в пределах 30-45%
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.warranty__row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.warranty -->
+    <section class="certificates">
+        <div class="container">
+            <h2 class="certificates__title">
+                Наши сертификаты!
+            </h2>
+            <div class="certificates__row">
+                <div class="certificates__col">
+                    <div class="certificates__item">
+                        <a href="./img/certificates/main-certificate.jpg" data-fancybox>
+                        <img alt="" src="./img/certificates/certificate--1.png" /> 
+                    </a>
+                    </div>
+                </div>
+                <!-- /.sertificates__col -->
+                <div class="certificates__col">
+                    <div class="certificates__item">
+                        <a href="./img/certificates/main-certificate.jpg" data-fancybox>
+                        <img alt="" src="./img/certificates/certificate--2.png" /> 
+                    </a>
+                    </div>
+                </div>
+                <!-- /.sertificates__col -->
+                <div class="certificates__col">
+                    <div class="certificates__item">
+                        <a href="./img/certificates/main-certificate.jpg" data-fancybox>
+                        <img alt="" src="./img/certificates/certificate--3.png" /> 
+                    </a>
+                    </div>
+                </div>
+                <!-- /.sertificates__col -->
+                <div class="certificates__col">
+                    <div class="certificates__item">
+                        <a href="./img/certificates/main-certificate.jpg" data-fancybox>
+                        <img alt="" src="./img/certificates/certificate--4.png" /> 
+                    </a>
+                    </div>
+                </div>
+                <!-- /.sertificates__col -->
+            </div>
+        </div>
+    </section>
+    <!-- /.sertificates -->
+    <section class="trades">
+        <h2 class="trades__title">
+            Наши профессиональные направления!
+        </h2>
+        <div class="container">
+            <div class="trades__row">
+                <div class="trades__col">
+                    <div class="trades__item">
+                        <div class="trades__image"><img loading="lazy" src="./img/trades/1.jpg" alt="установка окон" class="trades__img"></div>
+                        <span class="trades__label"> продажа и установка окон!</span>
+                    </div>
+                    <!-- /.trades__item -->
+                </div>
+                <!-- /.trades__col -->
+                <div class="trades__col">
+                    <div class="trades__item">
+                        <div class="trades__image"><img loading="lazy" src="./img/trades/2.jpg" alt="утепление" class="trades__img"></div>
+                        <span class="trades__label">утепление и герметизация!</span>
+                    </div>
+                    <!-- /.trades__item -->
+                </div>
+                <!-- /.trades__col -->
+                <div class="trades__col">
+                    <div class="trades__item">
+                        <div class="trades__image"><img loading="lazy" src="./img/trades/3.jpg" alt="остекление" class="trades__img"></div>
+                        <span class="trades__label">остекление балконов и лоджий!</span>
+                    </div>
+                    <!-- /.trades__item -->
+                </div>
+                <!-- /.trades__col -->
+                <div class="trades__col">
+                    <div class="trades__item">
+                        <div class="trades__image"><img loading="lazy" src="./img/trades/4.jpg" alt="оттделка" class="trades__img"></div>
+                        <span class="trades__label">внутренняя и внешняя отделка!</span>
+                    </div>
+                    <!-- /.trades__item -->
+                </div>
+                <!-- /.trades__col -->
+                <div class="trades__col">
+                    <div class="trades__item trades__item--left">
+                        <div class="trades__image"><img loading="lazy" src="./img/trades/5.jpg" alt="остекление" class="trades__img"></div>
+                        <span class="trades__label">Остекление загородных домов!</span>
+                    </div>
+                    <!-- /.trades__item -->
+                </div>
+                <!-- /.trades__col -->
+                <div class="trades__col">
+                    <div class="trades__item ">
+                        <div class="trades__image"><img loading="lazy" src="./img/trades/6.jpg" alt="электрика" class="trades__img"></div>
+                        <span class="trades__label">Электромонтажные работы!</span>
+                    </div>
+                    <!-- /.trades__item -->
+                </div>
+                <!-- /.trades__col -->
+                <div class="trades__col">
+                    <div class="trades__item trades__item--right">
+                        <div class="trades__image"><img loading="lazy" src="./img/trades/7.jpg" alt="объём" class="trades__img"></div>
+                        <span class="trades__label">Увеличение внутреннего объёма!</span>
+                    </div>
+                    <!-- /.trades__item -->
+                </div>
+                <!-- /.trades__col -->
+                <div class="trades__col">
+                    <div class="trades__item trades__item--left trades__item--last2">
+                        <div class="trades__image"><img loading="lazy" src="./img/trades/8.jpg" alt="фурнитура" class="trades__img"></div>
+                        <span class="trades__label">изготовление шкафов и тумбочек!</span>
+                    </div>
+                    <!-- /.trades__item -->
+                </div>
+                <!-- /.trades__col -->
+                <div class="trades__col">
+                    <div class="trades__item trades__item--right trades__item--last2">
+                        <div class="trades__image"><img loading="lazy" src="./img/trades/9.jpg" alt="настил полов" class="trades__img"></div>
+                        <span class="trades__label">Настил полов!</span>
+                    </div>
+                    <!-- /.trades__item -->
+                </div>
+                <!-- /.trades__col -->
+            </div>
+            <!-- /.trades__row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.trades -->
+    <section class="question">
+        <h2 class="question__title">
+            Задайте свой вопрос и  мы Вам ответим в течении 5-ти минут!
+        </h2>
+        <p class="question__subtitle">
+            Хотите остаться довольными после замены окон на долгие года? <br> Со своей стороны наши мастера сделают все, чтобы Вы остались довольны своим выбором!
+        </p>
+        <div class="container">
+            <form action="#" class="question__form">
+                <div class="question__input-group">
+                    <input type="text" class="input input__name">
+                </div>
+                <!-- /.question__input-group -->
+                <div class="question__input-group">
+                    <input type="tel" class="input input__phone">
+                </div>
+                <!-- /.question__input-group -->
+                <div class="question__input-group">
+                    <textarea name="questionArea" id="questionArea" cols="100" rows="5" placeholder="Введите свой вопрос..."></textarea>
+                </div>
+                <!-- /.question__input-group -->
+            </form>
+            <!-- /.question__form -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.question -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

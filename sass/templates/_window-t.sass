@@ -1,5 +1,6 @@
 .window-types
     padding-top: 3.28rem
+    padding-bottom: 2.21rem
     &__title
         margin: 0
         text-align: center
@@ -7,9 +8,15 @@
         font-weight: 400
         line-height: 2.28rem
         margin-bottom: 2.92rem
+    &__card-block
+        margin-bottom: 2.71rem
+    &__window-description
+        margin-bottom: 1.71rem
 .card-block
     display: flex
     flex-wrap: wrap
+    &__col
+        flex-basis: 33%
     &__title
         font-weight: bold
         text-transform: uppercase
@@ -22,7 +29,6 @@
         display: flex
         flex-direction: column
         align-items: center
-        width: 33%
     &__price
         border: 2px dashed $orange
         background-color: $light
@@ -32,3 +38,123 @@
         text-transform: uppercase
         line-height: 1.42rem
         font-size: 1.28rem
+    &__image
+        transform: translateX(-0.785rem)
+        margin-bottom: 0.92rem
+        &--last
+            transform: translateX(0)
+.window-description
+    &__text
+        font-size: 1.28rem
+        text-align: center
+        margin-bottom: 1.42rem
+    &__consult
+        font-size: 1.28rem
+        text-align: center
+        margin-bottom: 1.42rem
+    &__contacts
+        line-height: 4rem
+        font-size: 1.71rem
+        font-weight: bold
+        text-transform: uppercase
+        text-align: center
+.form
+    // display: flex
+    // flex-wrap: wrap
+    // justify-content: center
+    margin: 0 auto
+.main-form
+    max-width: 48rem
+    &__button
+        margin: auto
+        display: block
+    &__policy
+        text-align: center
+        color: $policy-m
+        &::before
+            content: ''
+            background: url('../img/lockBlue.svg') center no-repeat
+            background-size: cover
+            width: 1.78rem
+            height: 1.78rem
+            display: block
+            position: absolute
+            left: -2rem
+            top: -0.5rem
+        &::after
+            content: ''
+            background: url('../img/lockBlue.svg') center no-repeat
+            background-size: cover
+            width: 1.78rem
+            height: 1.78rem
+            display: block
+            position: absolute
+            right: -2rem
+            top: -0.5rem
+    &__input-group
+        margin-bottom: 1rem
+        display: inline-block
+    &__button
+        padding: 1.392rem 3.14rem
+        font-size: 1.21rem
+        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15)
+        text-transform: uppercase
+        margin-bottom: 2.5rem
+    &__policy
+.input
+    padding: 1.42rem 10rem 1.42rem 1.42rem
+    border-radius: 5px
+    border: 1px solid #A5A5A5
+    outline: none
+    &::placeholder
+        color: #323232
+        font-size: 1.071rem
+        font-weight: 400
+        line-height: 1.42rem
+        
+.input__name
+    background: url('../img/windows/windows__name.png') $light 20rem center no-repeat
+    margin-right: 1rem
+
+.input__phone
+        background: url('../img/windows/windows__phone.png') $light 20rem center no-repeat
+    
+.policy
+    position: relative
+    display: block
+    max-width: 16rem
+    margin: auto
+    text-decoration: underline
+    &:hover
+        cursor: pointer
+        .policy__text
+            opacity: 1
+    &__text
+        text-decoration: none
+        color: $dark
+        position: absolute
+        border: 2px solid #b5aaaa
+        background: $light
+        padding: 1.071rem
+        width: 20rem
+        top: 190%
+        left: 50%
+        margin-left: -10rem
+        border-radius: 7px
+        transition: 0.5s
+        opacity: 0  
+        &::after
+            content: ""
+            position: absolute
+            bottom: 91%
+            left: 50%
+            margin-left: -0.7rem
+            width: 1.4rem
+            height: 1.4rem
+            border-width: 2px
+            border-style: solid
+            border-color: #b5aaaa transparent transparent #b5aaaa
+            background: $light
+            transform: rotate(45deg)
+            border-radius: 5px
+        

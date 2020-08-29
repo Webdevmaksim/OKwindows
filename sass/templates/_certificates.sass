@@ -1,0 +1,36 @@
+.certificates
+    background: url('../img/certificates/certificate-bg.png') no-repeat 
+    background-size: cover
+    min-height: 30.5rem
+    padding-top: 3.71rem
+    padding-bottom: 4.14rem
+    &__title
+        color: $light
+        font-size: 2.14rem
+        text-align: center
+        font-weight: 400
+        margin: 0
+        margin-bottom: 2rem
+    &__row
+        display: flex
+        flex-wrap: wrap
+    &__col
+        display: flex
+        flex-basis: 25%
+        justify-content: center
+    &__item
+        // border: 2px solid rgba(0, 0, 0, 0.23)
+        width: 15.78rem
+        height: 19.14rem
+        background: $light
+        border-radius: 5px
+        padding: 1.14rem 2rem
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            width: 3.35rem
+            height: 3.35rem
+            bottom: 0
+            right: 0
+            background: url('../img/certificates/after.png')
