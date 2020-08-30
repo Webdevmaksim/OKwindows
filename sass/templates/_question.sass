@@ -21,3 +21,47 @@
         display: block
         margin: auto
         margin-bottom: 2.071rem
+    &__input-group
+        display: inline-block
+        margin-bottom: 0.92rem
+        &:last-child
+            margin-bottom: 1.92rem
+
+    &__form
+        display: block
+        max-width: 47.14rem
+        margin: auto
+    &__textArea
+        max-width: 47rem
+        width: 47rem
+        min-height: 5.57rem
+        display: block
+        outline: none
+        resize: none
+    &__button
+        display: block
+        margin: 0 auto
+        margin-bottom: 1.2rem
+        padding: 1.35rem 2.78rem
+    &__policy
+        color: $light
+        &::before
+            content: ''
+            background: url('../img/lock-w.svg') center no-repeat
+            background-size: cover
+            width: 1.78rem
+            height: 1.78rem
+            display: block
+            position: absolute
+            left: -2rem
+            top: -0.5rem
+        &::after
+            content: ''
+            background: url('../img/lock-w.svg') center no-repeat
+            background-size: cover
+            width: 1.78rem
+            height: 1.78rem
+            display: block
+            position: absolute
+            right: -2rem
+            top: -0.5rem

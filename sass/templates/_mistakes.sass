@@ -1,0 +1,48 @@
+.mistakes
+    background: url('../img/mistakes/m-bg.png') no-repeat
+    background-size: cover
+    min-height: 52.85rem
+    color: $light
+    padding-top: 2.64rem
+    padding-bottom: 4.071rem
+    &__title
+        margin: 0
+        margin-bottom: 0.5rem
+        text-align: center
+        font-size: 2.14rem
+    &__subtitle
+        text-align: center
+        display: block
+        margin-bottom: 1.64rem
+        font-size: 1.71rem
+    &__text
+    &__image
+        display: flex
+        justify-content: center
+        align-items: center
+        &::after
+            content: ''
+            height: 2px
+            width: 7.85rem
+            margin-left: 1.28rem
+            background-color: $light
+        &::before
+            content: ''
+            height: 2px
+            width: 7.85rem
+            margin-right: 1.28rem
+            background-color: $light
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        max-width: 20rem
+    &__col
+        margin-right: 3rem
+        &:last-child
+            margin-right: 0
+    &__row
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
