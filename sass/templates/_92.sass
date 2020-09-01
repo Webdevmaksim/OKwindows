@@ -1,0 +1,52 @@
+.recomend
+    padding-top: 3.21rem
+    padding-bottom: 3.21rem
+    background: url('../img/92/92-bg.png') no-repeat
+    min-height: 32.71rem
+    &__title
+        text-align: center
+        font-size: 2.14rem
+        color: $light
+        margin: 0
+        margin-bottom: 2.14rem
+    &__icon
+        width: 10.5rem
+        height: 10.5rem
+        border: 6px solid rgba(0, 0, 0, 0.17)
+        background-color: $light
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        margin-bottom: 2rem
+        &:hover
+            .recomend__img
+                transform: scale(1)
+    &__img
+        width: 8.42rem
+        height: 8.42rem
+        transform: scale(0.9)
+        transition: all 0.3s
+    &__row
+        display: flex
+        flex-wrap: wrap
+    &__col
+        flex-basis: 33.33%
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__item-title
+        color: $light
+        margin: 0
+        margin-bottom: 0.5rem
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 1.071rem
+
+    &__description
+        font-size: 1rem
+        color: $light
+        text-align: center
+        max-width: 21.28rem

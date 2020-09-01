@@ -1,0 +1,52 @@
+.m-q
+    background-color: #e8e8e8
+    padding-top: 2.35rem
+    padding-bottom: 3.78rem
+    &__form
+        text-align: center
+        background-color: $light
+        padding-top: 2rem
+        padding-bottom: 2rem
+        border: 6px solid transparent    
+        border-image: url('../img/border-b.png') 6 stretch 
+    &__input-group
+        display: inline-block
+        margin-bottom: 1rem
+    &__input
+        background-color: #f8f8f8
+    &__title
+        margin: 0
+        font-size: 2.14rem
+        font-weight: 400
+        color: #2e2e2e
+        line-height: 2.28rem
+        margin-bottom: 4px
+    &__subtitle
+        margin: 0
+        margin-bottom: 2rem
+        font-size: 2rem
+        line-height: 2.28rem
+        color: #2283aa
+    &__select
+        appearance: none
+        border: 1px solid #A5A5A5
+        border-radius: 5px
+        padding: 1.2rem 3rem 1.2rem 0.5rem
+        outline: none
+        cursor: pointer
+        width: 100%
+    &__select-wrapper
+        display: block
+        position: relative
+        max-width: 20.5rem
+        margin: auto
+        margin-bottom: 1rem
+        &::after
+            position: absolute
+            content: ''
+            pointer-events: none
+            top: 0.2rem
+            right: 0
+            width: 3rem
+            height: 3rem
+            background: url('../img/drop-d.png') no-repeat center

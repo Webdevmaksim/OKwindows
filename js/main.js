@@ -82,4 +82,17 @@ $(document).ready(function () {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
     }, 1000);
+    //tabs
+    var tab = $('.q-a__item');
+    var content = $('.q-a__description');
+
+    tab.on('click', function(event){
+        $('.q-a__item').removeClass('q-a__item--active');
+        $(this).toggleClass('q-a__item--active');
+
+        $('.q-a__description').removeClass('q-a__description--active');
+        $('.q-a__description[data-tab='+$(this).attr('data-tab')+']')
+        .toggleClass('q-a__description--active');
+    });
+
 });

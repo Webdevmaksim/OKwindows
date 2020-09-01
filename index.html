@@ -44,20 +44,20 @@
     <nav class="hero__nav nav" id="navbar">
             <div class="container">
             <div class="nav__wrapper">
-            <a href="#" class="nav__item">Акции</a>
-            <a href="#" class="nav__item">Цены</a>
-            <a href="#" class="nav__item">Почему выбирают нас?</a>
-            <a href="#" class="nav__item">Гарантии</a>
-            <a href="#" class="nav__item">Отзывы клиентов</a>
-            <a href="#" class="nav__item">Наши услуги</a>
-            <a href="#" class="nav__item">Контакты</a>
+            <a href="#hero" class="nav__item">Акции</a>
+            <a href="#price" class="nav__item">Цены</a>
+            <a href="#why" class="nav__item">Почему выбирают нас?</a>
+            <a href="#warranty" class="nav__item">Гарантии</a>
+            <a href="#feedback" class="nav__item">Отзывы клиентов</a>
+            <a href="#q-a" class="nav__item">Вопросы</a>
+            <a href="#footer" class="nav__item">Контакты</a>
             </div>
             <!-- /.nav__wrapper -->
             </div>
             <!-- /.container -->
         </nav>
         <!-- /.hero__nav -->
-    <main class="hero">
+    <main id="hero" class="hero">
         
         <div class="container">
             <div class="hero__wrapper">
@@ -177,7 +177,7 @@
         <!-- /.container -->
     </main>
     <!-- /.hero -->
-    <section class="window-types">
+    <section id="price" class="window-types">
         <div class="container">
             <h2 class="window-types__title">
                 По Вашему желанию мы можем изготовить окна любой формы, размера, комплектации и цвета!
@@ -303,7 +303,7 @@
         <!-- /.container -->
     </section>
     <!-- /.window-types -->
-    <section class="why">
+    <section id="why" class="why">
         <div class="container">
             <h2 class="why__title">
                 Почему более 10 000 клиентов выбрали нас?
@@ -345,7 +345,7 @@
         </div>
     </section>
     <!-- /.why -->
-    <section class="warranty">
+    <section id="warranty" class="warranty">
         <div class="container">
             <h2 class="warranty__title">
                 Гарантии на продукцию и монтажные работы!
@@ -469,7 +469,7 @@
         </div>
     </section>
     <!-- /.sertificates -->
-    <section class="trades">
+    <section id="trades" class="trades">
         <h2 class="trades__title">
             Наши профессиональные направления!
         </h2>
@@ -589,7 +589,7 @@
         <!-- /.container -->
     </section>
     <!-- /.question -->
-    <section class="feedback">
+    <section id="feedback" class="feedback">
         <h2 class="feedback__title">
             Несколько отзывов от наших клиентов!
         </h2>
@@ -601,7 +601,7 @@
                         <div class="feedback__header">
                             <img loading="lazy" src="./img/feedback/feedback-icon.png" alt="иконка" class="feedback__icon">
                             <span class="feedback__subtitle">
-                                 <span class="feedback__subtitle--blue">Татьяна, г.Москва</span>  Двухстворчатое окно 1,95 кв.м REHAU; ПВХ цена "под ключ": 15700 руб.		
+                                 <span class="feedback__subtitle--blue">Татьяна, г.Москва</span>  Двухстворчатое окно 1,95 кв.м <br> REHAU; ПВХ <br> цена "под ключ": 15700 руб.		
 
 
                             </span>
@@ -622,7 +622,7 @@
                                     Михаил,  г. Подольск
                                 </span>
 
-                             Балкон (холод. ост-ние) 7,5 кв.м provedal; аллюминий цена остекления: 27300 руб.
+                             Балкон (холод. ост-ние) 7,5 кв.м <br> provedal; аллюминий <br> цена остекления: 27300 руб.
 
                             </span>
                         </div>
@@ -641,7 +641,7 @@
                                 <span class="feedback__subtitle--blue">
                                     Максим, Химки
                                 </span>
-                                 Лоджия (ламинация) 10,17 кв.м REHAU; ПВХ цена остекления: 78500 руб.
+                                 Лоджия (ламинация) 10,17 кв.м <br> REHAU; ПВХ <br> цена остекления: 78500 руб.
                             </span>
                         </div>
                         <p class="feedback__text">
@@ -659,7 +659,7 @@
                                 <span class="feedback__subtitle--blue">
                                     Марина, Чехов
                                 </span>
-                                 Коттедж 17 окон + терраса KBE; ПВХ цена остекления: 156000 руб.
+                                 Коттедж 17 окон + терраса <br> KBE; ПВХ <br> цена остекления: 156000 руб.
                             </span>
                         </div>
                         <p class="feedback__text">
@@ -740,11 +740,169 @@
     <section class="more">
         <div class="container">
             <form action="#" class="more__form">
-                
+                <h2 class="more__title">
+                    Хотите узнать больше про окна?
+                </h2>
+                <p class="more__subtitle">
+                    Закажите бесплатную консультацию нашего специалиста!
+                </p>
+                <div class="more__input-group"><input type="text" class="input more__input input__name"></div>
+                <div class="more__input-group"><input type="tel" class="input more__input input__phone"></div>
+                <button class="button more__button">
+                    заказать консультацию!
+                </button>
+                <p class="policy main-form__policy">
+                    политика конфидициальности
+                    <span class="policy__text">
+                        Ваши данные не будут разглашены третьим лицам, согласно закону РФ “О не разглашении персональных данных”
+                    </span>
+                </p>
             </form>
         </div>
         <!-- /.container -->
     </section>
+    <section id="q-a" class="q-a">
+        <h2 class="q-a__title">
+            Посмотрите какие услуги предоставляет наша компания!
+        </h2>
+        <div class="container">
+            <div class="q-a__row">
+                <ul class="q-a__list">
+                    <li data-tab="1" class="q-a__item q-a__item--active">Что такое ПВХ?</li>
+                    <li data-tab="2" class="q-a__item">Как подготовиться к монтажу?</li>
+                    <li data-tab="3" class="q-a__item">Из-за чего запотевают пластиковые окна?</li>
+                    <li data-tab="4" class="q-a__item">Как ухаживать за пластиковыми окнами?</li>
+                    <li data-tab="5" class="q-a__item">Тонируем ли мы стекла?</li>
+                    <li data-tab="6" class="q-a__item">Что такое водоотвод?</li>
+                    <li data-tab="7" class="q-a__item">Что такое откос, подоконник, отлив?</li>
+                    <li data-tab="8" class="q-a__item">В чем состоит преимущество ПВХ?</li>
+                </ul>
+                <div class="q-a__divider">
+                    <img loading="lazy" src="../img/q-a_divider.png" alt="разделитель">
+                </div>
+                <div class="q-a__text">
+                    <p data-tab="1" class="q-a__description q-a__description--active">ПВХ является поливинилхлоридом, самым универсальным термопластичным полимером, как правило, линейного строения. ПВХ - это твердый белый продукт, созданный путем суспензионной полимеризации* винилхлорида. ПВХ изготавливают из натурального сырья: природного газа, нефти, поваренной соли. Готовый материал является химически стабильным, для человека он не представляет никакой опасности. * Полимеризацией называют реакцию получения из мономера полимера.</p>
+                    <p data-tab="2" class="q-a__description">Необходимо, чтобы в день монтажа пластикового окна на объекте не было детей и домашних животных. Кроме того, Вы должны обеспечить свободный доступ к электророзеткам. Сам оконный проем освободите от занавесок, штор и цветов. Желательно как можно дальше отодвинуть от проема мебель для освобождения доступа к окну.Всю мебель для ее защиты от пыли нужно накрыть влажной тканью, а затем полиэтиленом. Желательно скатать ковры или накрыть их влажной тканью.</p>
+                    <p data-tab="3" class="q-a__description">Прежде всего необходимо выяснить, где собирается конденсат: снаружи стеклопакета или внутри. Если пластиковые окна запотевают изнутри, причина этого неприятного явления может скрываться в негерметичности самого стеклопакета, то-есть брака. Если конденсат образуется на стеклопакете, причиной является только одно - повышенная влажность в комнате, поскольку пластиковые окна обладают высокой герметичностью оконных проемов и исключают щели и сквозняки.  В такой ситуации необходимо каждый день проветривать помещение, </p>
+                    <p data-tab="4" class="q-a__description">Уход за окнами ПВХ не доставит Вам особых хлопот. Чтобы удалить уличную грязь с внутренней или наружной стороны рам пластиковых окон, достаточно использовать современные жидкие моющие средства, раствор мыла или стирального порошка. При уходе за окнами ПВХ не следует использовать такие чистящие средства, которые содержат абразивные материалы или растворители. Эти вещества могут серьезно повредить пластик и, как следствие, лишить его безупречной гладкой поверхности. Стекла можно мыть любым способом.</p>
+                    <p data-tab="5" class="q-a__description">Сегодня мы предлагаем выбор тонированных стекол, включающий до 20 оттенков, которые созданы приглушать яркий солнечный свет. У нас Вы найдете зеркальные полупрозрачные стекла, которые отражают солнечные лучи и создают в доме летнюю прохладу. Такие стекла дают и ощутимую экономию потребляемой кондиционером энергии. Однако стоит знать, что срок изготовления стеклопакетов с тонированием увеличится на неделю.</p>
+                    <p data-tab="6" class="q-a__description">Каждое пластиковое окно предусматривает водоотводящие каналы, необходимые для вывода наружу скапливающейся внутри окна влаги. Как правило, водоотводящие каналы располагают в нижней части рамы. Водоотводящие каналы можно обнаружить, открыв створку. При эксплуатации окон необходимо постоянно следить за состоянием каналов и периодически очищать их от грязи.</p>
+                    <p data-tab="7" class="q-a__description">Подоконник представляет собой горизонтальную часть внутреннего обрамления самого оконного проема, укладываемую на уровне нижней части рамы. Откос является плоской ПВХ - панелью, предназначенной для аккуратного оформления боковых поверхностей оконного проема.Отлив представляется элементом, предназначенным для отвода дождевой воды, который устанавливают с внешней стороны окна вдоль нижней части рамы.</p>
+                    <p data-tab="8" class="q-a__description">Современные пластиковые окна имеют следующие достоинства:
+                        -долговечны, имеют срок службы около 40 лет;
+                        -герметичны: спасают от пыли, шума, сквозняков и морозов;
+                        -устойчивы к метеорологическим воздействиям;
+                        -пожаробезопасны: в рецептуре пластика имеют место антипирены, не поддерживающие горение;
+                        -экологичны: не вредят здоровью людей, производство окон помогает сберегать леса, не загрязняет окружающую среду;
+                        -не требуют специального ухода, сохраняют свой первоначальный цвет в течение всего времени эксплуатации.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.q-a -->
+    <section class="recomend">
+        <h2 class="recomend__title">
+            Почему 92% клиентов  с радостью рекомендуют нас своим близким друзьям и знакомым?
+        </h2>
+        <div class="container">
+            <div class="recomend__row">
+                <div class="recomend__col">
+                    <div class="recomend__item">
+                        <div class="recomend__icon"><img loading="lazy" src="./img/92/92__1.png" alt="самолётик" class="recomend__img"></div>
+                        <h5 class="recomend__item-title">с нами легко работать!</h5>
+                        <p class="recomend__description">Невозможно качественно установить раму, в результате придется доплачивать за дополнительные работы на монтаже, либо получить пустые участки, щели залитые строительной пеной.</p>
+                    </div>
+                </div>
+                <div class="recomend__col">
+                    <div class="recomend__item">
+                        <div class="recomend__icon"><img loading="lazy" src="./img/92/92__2.png" alt="диплом" class="recomend__img"></div>
+                        <h5 class="recomend__item-title">с нами надежно!</h5>
+                        <p class="recomend__description">Невозможно качественно установить раму, в результате придется доплачивать за дополнительные работы на монтаже, либо получить пустые участки, щели залитые строительной пеной.</p>
+                    </div>
+                </div>
+                <div class="recomend__col">
+                    <div class="recomend__item">
+                        <div class="recomend__icon"><img loading="lazy" src="./img/92/92__3.png" alt="сердце" class="recomend__img"></div>
+                        <h5 class="recomend__item-title">с нами все красиво!</h5>
+                        <p class="recomend__description">Невозможно качественно установить раму, в результате придется доплачивать за дополнительные работы на монтаже, либо получить пустые участки, щели залитые строительной пеной.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.92 -->
+    <section class="m-q">
+        <div class="container">
+            <form action="#" class="m-q__form">
+                <h2 class="m-q__title">
+                    Хотите узнать больше про окна?
+                </h2>
+                <p class="m-q__subtitle">
+                    Закажите бесплатную консультацию нашего специалиста!
+                </p>
+                <div class="m-q__input-group"><input type="text" class="input m-q__input input__name"></div>
+                <div class="m-q__input-group"><input type="tel" class="input m-q__input input__phone"></div>
+                <div class="m-q__input-group m-q__select-wrapper">
+                    <select class="m-q__select" name="mQmore" id="mQmore" placeholder="">
+                        <option selected disabled>Выберите тип услуги</option>
+                        <option value="1">Установка окон</option>
+                        <option value="2">Обслуживание</option>
+                        <option value="3">Ремонт окон</option>
+                    </select>
+                </div>
+                <button class="button more__button">
+                    заказать консультацию!
+                </button>
+                <p class="policy main-form__policy">
+                    политика конфидициальности
+                    <span class="policy__text">
+                        Ваши данные не будут разглашены третьим лицам, согласно закону РФ “О не разглашении персональных данных”
+                    </span>
+                </p>
+            </form>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.m-q -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="header__wrapper">
+
+                <div class="header__logo">
+                    <img src="./img/main/logo.png" alt="Логотип" class="header__img">
+                    <a href="./index.html" class="logo__main-link">
+                        <div class="header__logo-text">
+                            <h2 class="footer__title header__title">ОКНОВИЯ.РФ</h2>
+                            <span class="footer__subtitle header__subtitle">Лучшие окна в Москве и МО</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- /.header__logo -->
+                <div class="header__contacts contacts">
+                    <img src="./img/main/phone.png" alt="Телефон" class="contacts__img">
+                    <div class="contacts__numbers">
+                        <a href="tel:+7(495)5326999" class="footer__phone contacts__phone"><small class="footer__phone--small contacts__phone--small">+7/495/</small>532-69-99</a>
+                        <span class="footer__w-hours contacts__w-hours">Работаем: с 9-00 до 21-00</span>
+                    </div>
+                    <!-- /.contacs__numbers -->
+                </div>
+                <!-- /.header__contacts -->
+                <button class="button header__button">Заказать звонок!</button>
+            </div>
+            <!-- /.header__wrapper -->
+        </div>
+        <p class="footer__inn">
+            © 2009-2014 www.oknovia.ru, Все права защищены. ИНН 223344556677, ОРГН 223344556677881
+        </p>
+        <p class="policy footer__policy">
+            Политика конфидициальности
+            <span class="footer__policy-text policy__text">
+                Ваши данные не будут разглашены третьим лицам, согласно закону РФ “О не разглашении персональных данных”
+            </span>
+        </p>
+    </footer>
+    <!-- /.footer -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>

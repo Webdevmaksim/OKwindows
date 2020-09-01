@@ -16,10 +16,12 @@
         margin-bottom: 1.64rem
         font-size: 1.71rem
     &__text
+        font-size: 1rem
     &__image
         display: flex
         justify-content: center
         align-items: center
+        margin-bottom: 1.78rem
         &::after
             content: ''
             height: 2px
@@ -42,7 +44,15 @@
         margin-right: 3rem
         &:last-child
             margin-right: 0
+        &:nth-of-type(-1n+3)
+            margin-bottom: 3.28rem
     &__row
         display: flex
         flex-wrap: wrap
         justify-content: center
+    &__item-title
+        margin: 0
+        margin-bottom: 0.6rem
+        font-size: 1.071rem
+        text-transform: uppercase
+        align-self: flex-start
