@@ -41,6 +41,9 @@
         max-width: 20.5rem
         margin: auto
         margin-bottom: 1rem
+        &.active
+            &::after
+                transform: scaleY(-1)
         &::after
             position: absolute
             content: ''
@@ -50,3 +53,4 @@
             width: 3rem
             height: 3rem
             background: url('../img/drop-d.png') no-repeat center
+            transition: all 0.3s

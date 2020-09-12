@@ -39,6 +39,47 @@
             <!-- /.header__wrapper -->
         </div>
         <!-- /.container -->
+        <div class="mobile__wrapper">
+            <div class="mobile__menu">
+                <a href="./index.html" class="logo__main-link mobile__logo">
+                    <img src="./img/main/logo.png" alt="Логотип" class="header__img">
+                    <div class="header__logo-text">
+                        <h2 class="header__title">ОКНОВИЯ.РФ</h2>
+                        <span class="header__subtitle">Лучшие окна в Москве и МО</span>
+                    </div>
+                </a>
+                <div class="mobile__burger">
+                    <span></span>
+                </div>
+                <!-- /.mobile__burger -->
+                <nav class="mobile__nav">
+                    <ul class="mobile__list">
+                        <li><a href="#hero" class="mobile__link">Акции</a></li>
+                        
+                        <li><a href="#price" class="mobile__link">Цены</a></li>
+                        
+                        
+                        <li><a href="#why" class="mobile__link">Почему выбирают нас?</a></li>
+                        
+                        
+                        <li><a href="#warranty" class="mobile__link">Гарантии</a></li>
+                        
+                        
+                        <li><a href="#feedback" class="mobile__link">Отзывы клиентов</a></li>
+                        
+                        
+                        <li><a href="#q-a" class="mobile__link">Вопросы</a></li>
+                        
+                        
+                        <li><a href="#footer" class="mobile__link">Контакты</a></li>
+                    </ul>
+                        
+                    </nav>
+                <!-- /.mobile__nav -->
+            </div>
+            <!-- /.mobile__menu -->
+        </div>
+        <!-- /.mobile__wrapper -->
     </header>
     <!-- /.header -->
     <nav class="hero__nav nav" id="navbar">
@@ -55,8 +96,11 @@
             <!-- /.nav__wrapper -->
             </div>
             <!-- /.container -->
+            
         </nav>
         <!-- /.hero__nav -->
+        
+        
     <main id="hero" class="hero">
         
         <div class="container">
@@ -563,14 +607,14 @@
         <div class="container">
             <form action="#" class="question__form">
                 <div class="question__input-group">
-                    <input type="text" class="input input__name">
+                    <input type="text" class="input input__name input__name--fix">
                 </div>
                 <!-- /.question__input-group -->
                 <div class="question__input-group">
                     <input type="tel" class="input input__phone">
                 </div>
                 <!-- /.question__input-group -->
-                <div class="question__input-group">
+                <div class="question__input-group question__textArea-wrapper">
                     <textarea name="questionArea" id="questionArea" class="question__textArea" placeholder="Введите свой вопрос..."></textarea>
                 </div>
                 <!-- /.question__input-group -->
@@ -844,7 +888,7 @@
                 <div class="m-q__input-group"><input type="text" class="input m-q__input input__name"></div>
                 <div class="m-q__input-group"><input type="tel" class="input m-q__input input__phone"></div>
                 <div class="m-q__input-group m-q__select-wrapper">
-                    <select class="m-q__select" name="mQmore" id="mQmore" placeholder="">
+                    <select class="m-q__select" name="mQmore" id="mQmore">
                         <option selected disabled>Выберите тип услуги</option>
                         <option value="1">Установка окон</option>
                         <option value="2">Обслуживание</option>

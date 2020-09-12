@@ -23,21 +23,25 @@
         margin-bottom: 2.071rem
     &__input-group
         display: inline-block
-        margin-bottom: 0.92rem
-        &:last-child
-            margin-bottom: 1.92rem
-
+        // margin-bottom: 0.92rem
+        &:first-child
+            margin-bottom: 1.5rem
+        &:nth-of-type(-n+2)
+            width: 49%
+    &__textArea-wrapper
+        width: 98%
     &__form
         display: block
-        max-width: 47.14rem
+        max-width: 47.5rem
         margin: auto
     &__textArea
-        max-width: 47rem
-        width: 47rem
+        // max-width: 47.5rem
+        width: 100%
         min-height: 5.57rem
-        display: block
+        // display: block
         outline: none
         resize: none
+        margin-bottom: 1.92rem
     &__button
         display: block
         margin: 0 auto

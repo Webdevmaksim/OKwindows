@@ -1,4 +1,22 @@
 $(document).ready(function () {
+    //mobile burger
+    $('.mobile__burger').click(function(event){
+        $('.mobile__burger,.mobile__nav').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+
+    $('.mobile__list').click(function(event){
+        $('.mobile__burger,.mobile__nav').removeClass('active');
+        $('body').removeClass('lock');
+    });
+    //arrow 
+    var arrow = $('.m-q__select-wrapper');
+
+    $('.m-q__select').click(function(event){
+        $('.m-q__select-wrapper').toggleClass('active');
+    });
+
+    
     //Sticky navbar
     window.onscroll = function() {myFunction();};
 
@@ -19,12 +37,20 @@ $(document).ready(function () {
      //slider
      var swiper = new Swiper('.swiper-container', {
         // loop: true,
-        slidesPerView: 2,
-        spaceBetween: 40,
         navigation: {
           nextEl: '.hero__slider-control-next',
           prevEl: '.hero__slider-control-prev',
         },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 0
+              },
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 40
+              }
+        }
       });
     // Set the date we're counting down to
     var countDownDate = new Date("sep 29, 2020 15:37:25").getTime();

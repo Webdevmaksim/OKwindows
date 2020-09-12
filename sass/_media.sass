@@ -1,0 +1,89 @@
+@media screen and ( max-width: 1300px )
+    html
+        font-size: 12px
+@media screen and ( max-width: 1024px )
+    .header
+        &__wrapper
+            justify-content: center
+    .nav
+        &__wrapper
+            justify-content: center
+    .hero
+        &__slider
+            max-width: 80%
+            margin: auto
+            &-control
+                z-index: 1
+                &-prev
+                    left: 0
+                &-next
+                    right: 0
+                    
+        &__slide
+            max-width: fit-content
+    .slide
+        &__title
+            max-width: 30rem
+    .swiper
+        &-slide
+            padding-left: 15rem    
+    .warranty
+        &__row
+            justify-content: center
+    .m-q__select-wrapper
+        &::after
+            right: 0.5rem
+
+@media screen and ( max-width: 992px )
+    .sticky
+        display: none
+    .mobile
+        &__nav
+            position: fixed
+            z-index: 9999999
+        &__wrapper
+            display: block
+            position: fixed
+            z-index: 2
+    .hero
+        &__nav
+            display: none
+    .sticky + .hero 
+        padding-top: 0
+    //hover disable
+@media screen and ( max-width: 768px )
+    .hero
+        margin-top: -2rem
+        &__wrapper
+            padding-top: 4rem
+            padding-bottom: 3rem
+    .card-block
+        &__image
+            &--last
+                margin-bottom: 2.4rem
+    .why
+        background-position: -50rem
+    .swiper
+        &-slide
+            padding-left: 7rem
+    .certificates
+        &__col
+            flex-basis: 50%
+            &:nth-of-type(-n+2)
+                margin-bottom: 2rem
+    .q-a
+        &__list
+            margin: auto
+        &__divider
+             width: 100%
+             & img
+                 margin: auto
+                 display: block
+                 transform: rotate(90deg)
+        &__text
+            margin: auto
+            min-height: 13.5rem
+    
+    
+    
+
