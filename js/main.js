@@ -10,8 +10,6 @@ $(document).ready(function () {
         $('body').removeClass('lock');
     });
     //arrow 
-    var arrow = $('.m-q__select-wrapper');
-
     $('.m-q__select').click(function(event){
         $('.m-q__select-wrapper').toggleClass('active');
     });

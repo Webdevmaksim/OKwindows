@@ -35,6 +35,9 @@
             right: 0.5rem
 
 @media screen and ( max-width: 992px )
+    .header
+        &__wrapper
+            display: none
     .sticky
         display: none
     .mobile
@@ -51,6 +54,43 @@
     .sticky + .hero 
         padding-top: 0
     //hover disable
+    .recomend
+        &__icon
+            &:hover
+                .recomend__img
+                    transform: scale(0.9)
+    .hero
+        &__slider
+            &-control
+                &:hover
+                    cursor: default
+                &-next
+                    &:hover
+                       background: url('../img/main/arrow-static.png') center no-repeat 
+                       transform: rotate(180deg)
+                       background-size: cover
+                &-prev
+                    &:hover
+                        background: url('../img/main/arrow-static.png') center no-repeat
+                        background-size: cover
+                        transform: rotate(0deg)
+    .nav
+        &__item
+            &:hover
+                color: $light
+                text-decoration: none
+    .slide
+        &__button
+            &:hover
+                background-color: $orange
+    .logo
+        &__main-link
+            &:hover
+                transform: scale(1)
+    .q-a
+        &__item
+            &:hover
+                cursor: default
 @media screen and ( max-width: 768px )
     .hero
         margin-top: -2rem
@@ -83,7 +123,106 @@
         &__text
             margin: auto
             min-height: 13.5rem
-    
+    .footer
+        &__logo
+            margin-right: 5rem
+    .warranty
+        &__col
+            margin-right: 0
+@media screen and ( max-width: 576px )
+    body
+        padding-top: 5rem
+    .main-form
+        &__input-group
+            &:nth-of-type(-n+2)
+                display: block
+                margin: auto
+                margin-bottom: 2rem        
+    .window-types
+        &__input
+            margin: auto
+            display: block     
+    .mistakes
+        &__col
+            margin-right: 0
+            &:nth-of-type(-n+4)
+                margin-bottom: 3.28rem
+    .input
+        &__name
+            &--fix
+                margin: auto
+                display: block
+                margin-bottom: 0.5rem
+        &__phone
+            &--fix
+                display: block
+                margin: auto
+                margin-bottom: 2rem
+                
+                
+    .card-block
+        &__col
+            flex-basis: 100%
+    .certificates
+        &__col
+            flex-basis: 100%
+            &:nth-of-type(-n+3)
+                margin-bottom: 2rem
+    .trades
+        &__col
+            flex-basis: 100% !important
+        &__item
+            &--left
+                padding-left: 0
+            &--right
+                padding-right: 0
+    .question
+        &__input-group
+            width: 100% !important
+        &__textArea
+            &-wrapper
+                max-width: 23rem
+                display: block
+                margin: auto
+    .feedback
+        &__col
+            flex-basis: 100%
+            &:nth-of-type(-n+3)
+                margin-bottom: 2rem
+    .recomend
+        background-size: cover
+        &__col
+            flex-basis: 100%
+            &:nth-of-type(-n+2)
+                margin-bottom: 2rem
+    .footer
+        &__button
+            display: none
+        &__logo
+            margin-right: 0
+            margin-bottom: 1.5rem
+        &__contacts
+            margin-bottom: 1.5rem
+        &__wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+    .q-a
+        &__text
+            min-height: 20rem
+        &__description
+            font-size: 1.2rem
+    .m-q
+        &__select-wrapper
+            max-width: 23rem
+                
+
+                
+
+
+
+
     
     
 
