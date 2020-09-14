@@ -132,6 +132,26 @@
 @media screen and ( max-width: 576px )
     body
         padding-top: 5rem
+    .hero
+        &__subtitle
+            display: flex
+            flex-direction: column
+            align-items: center
+            &--item
+                margin: 0
+                margin-bottom: 1.5rem
+        &__slider
+            &-control
+                top: -1.5rem
+    .slide
+        &__promo-block
+            &::before
+                padding-left: 2px
+                margin-right: 0.5rem
+    .swiper
+        &-slide
+            padding-left: 0
+            padding-top: 5.5rem
     .main-form
         &__input-group
             &:nth-of-type(-n+2)
@@ -139,9 +159,15 @@
                 margin: auto
                 margin-bottom: 2rem        
     .window-types
+        padding-top: 6.5rem
         &__input
             margin: auto
-            display: block     
+            display: block   
+    .why
+        background-position: -98rem  
+        padding-top: 6.5rem
+    .warranty
+        padding-top: 6.5rem
     .mistakes
         &__col
             margin-right: 0
@@ -185,6 +211,7 @@
                 display: block
                 margin: auto
     .feedback
+        padding-top: 6.5rem
         &__col
             flex-basis: 100%
             &:nth-of-type(-n+3)
@@ -196,6 +223,7 @@
             &:nth-of-type(-n+2)
                 margin-bottom: 2rem
     .footer
+        padding-top: 1rem
         &__button
             display: none
         &__logo
@@ -209,6 +237,7 @@
             align-items: center
             justify-content: space-around
     .q-a
+        padding-top: 6.5rem
         &__text
             min-height: 20rem
         &__description
@@ -216,6 +245,49 @@
     .m-q
         &__select-wrapper
             max-width: 23rem
+@media screen and ( max-width: 375px )
+    .hero
+        &__title
+            font-size: 2.5rem
+        &__slider
+            width: 100%
+            max-width: 100%
+    .slide
+        &__promo-block
+            padding-top: 3rem
+            justify-content: center
+            &::before
+                position: absolute
+                top: 8.5rem
+    .feedback
+        &__subtitle
+            margin-bottom: 1rem
+        
+    .feedback
+        &__header
+            align-items: flex-start
+    .q-a
+        &__text
+            min-height: 22rem
+    .recomend
+        &__title
+            font-size: 1.9rem
+    .footer
+        padding-bottom: 1.5rem
+@media screen and ( max-width: 320px )
+    .hero
+        padding-top: 3.5rem !important
+        &__title
+            font-size: 2.2rem
+    .slide
+        &__promo-block
+            &::before
+                top: 9.5rem
+    .q-a
+        &__text
+            min-height: 27rem
+    
+    
                 
 
                 
