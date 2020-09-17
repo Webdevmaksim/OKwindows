@@ -324,11 +324,11 @@
             <!-- /.window-type__description -->
             <form class="window-types__form main-form form">
                 <div class="main-form__input-group input-group">
-                    <input placeholder="Введите ваше имя..." name="windowName" type="text" class="input window-types__input input__name">
+                    <input autocomplete="off" placeholder="Введите ваше имя..." name="windowName" type="text" class="input window-types__input input__name">
                 </div>
                 <!-- /.input__group -->
                 <div class="main-form__input-group input-group">
-                    <input placeholder="Введите ваш телефон..." name="windowPhone" type="tel" class="input window-types__input input__phone">
+                    <input autocomplete="off"  placeholder="Введите ваш телефон..." name="windowPhone" type="tel" class="input window-types__input input__phone">
                 </div>
                 <!-- /.input__group -->
                 <button class="button main-form__button">
@@ -607,11 +607,11 @@
         <div class="container">
             <form action="#" class="question__form">
                 <div class="question__input-group">
-                    <input placeholder="Введите ваше имя..." type="text" class="input input__name input__name--fix">
+                    <input name="questionName" autocomplete="off" placeholder="Введите ваше имя..." type="text" class="input input__name input__name--fix">
                 </div>
                 <!-- /.question__input-group -->
                 <div class="question__input-group">
-                    <input placeholder="Введите ваш телефон..." type="tel" class="input input__phone input__phone--fix">
+                    <input name="questionPhone" autocomplete="off" placeholder="Введите ваш телефон..." type="tel" class="input input__phone input__phone--fix">
                 </div>
                 <!-- /.question__input-group -->
                 <div class="question__input-group question__textArea-wrapper">
@@ -790,8 +790,8 @@
                 <p class="more__subtitle">
                     Закажите бесплатную консультацию нашего специалиста!
                 </p>
-                <div class="more__input-group"><input placeholder="Ведите ваше имя..." type="text" class="input more__input input__name"></div>
-                <div class="more__input-group"><input placeholder="Введите ваш телефон..." type="tel" class="input more__input input__phone"></div>
+                <div class="more__input-group"><input autocomplete="off" placeholder="Ведите ваше имя..." type="text" class="input more__input input__name"></div>
+                <div class="more__input-group"><input autocomplete="off" placeholder="Введите ваш телефон..." type="tel" class="input more__input input__phone"></div>
                 <button class="button more__button">
                     заказать консультацию!
                 </button>
@@ -886,11 +886,11 @@
                     Закажите бесплатную консультацию нашего специалиста!
                 </p>
                 <div class="m-q__input-group">
-                    <input placeholder="Введите ваше имя..." type="text" class="input m-q__input input__name">
+                    <input autocomplete="off" placeholder="Введите ваше имя..." type="text" class="input m-q__input input__name">
                 </div>
 
                 <div class="m-q__input-group">
-                    <input placeholder="Введите ваш телефон..." type="tel" class="input m-q__input input__phone">
+                    <input autocomplete="off" placeholder="Введите ваш телефон..." type="tel" class="input m-q__input input__phone">
                 </div>
                 <div class="m-q__input-group m-q__select-wrapper">
                     <select class="m-q__select" name="mQmore" id="mQmore">
@@ -958,21 +958,21 @@
                 заголовок
             </h3>
             <button class="pop-up__close">&times;</button>
-            <form action="#" class="pop-up__form">
+            <form action="#" class="pop-up__form form">
                 <div class="pop-up__input-group">
                     <label class="pop-up__label" for="popName">Имя</label>
-                    <input id="popName" class="pop-up__input" type="text" placeholder="Введите ваше имя">
+                    <input name="popupName" autocomplete="off" id="popName" class="pop-up__input" type="text" placeholder="Введите ваше имя">
                 </div>
                 <div class="pop-up__input-group">
                     <label class="pop-up__label" for="popTel">Телефон</label>
-                    <input id="popTel" class="pop-up__input" type="tel" placeholder="Введите ваш телефон">
+                    <input name="popupTel" autocomplete="off" id="popTel" class="pop-up__input" type="tel" placeholder="Введите ваш телефон">
                 </div>
                 <div class="pop-up__input-group">
                     <label class="pop-up__label" for="popMail">Email</label>
-                    <input id="popMail" class="pop-up__input" type="email" placeholder="Введите ваш e-mail">
+                    <input name="popupMail" autocomplete="off" id="popMail" class="pop-up__input" type="email" placeholder="Введите ваш e-mail">
                 </div>
                 <div class="pop-up__policy-wrapper">
-                    <input id="popCheck" type="checkbox">
+                    <input name="popupCheck" id="popCheck" type="checkbox">
                     <label class="pop-up__checkbox" for="popCheck">Согласие на обработку данных</label>
                 </div>
                 <button class="button pop-up__button">
@@ -985,6 +985,7 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/validate.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

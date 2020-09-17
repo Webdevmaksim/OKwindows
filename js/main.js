@@ -142,5 +142,96 @@ $(document).ready(function () {
         $('.q-a__description[data-tab='+$(this).attr('data-tab')+']')
         .toggleClass('q-a__description--active');
     });
+    //form validate
+    $('.pop-up__form,.main-form').validate({
+        errorClass: "invalid",
+        errorElement: "div",
+        rules: {
+            // Строчное правило
+            // Правило-объект(Блок)
+            popupTel: {
+              required: true,
+              minlength: 18
+            },
+            popupName: {
+                required: true,
+                minlength: 2
+            },
+           
+            popupMail: {
+                required: true,
+                email: true
+            },
+            popupCheck: {
+                required: true
+            },
+            windowName:{
+                required: true,
+                minlength: 2
+            },
+            windowPhone:{
+                required: true,
+                minlength: 18
+            },
+          },  //Сообщения
+          messages: {
+            popupName:{
+              required: "Имя обязательно",
+              minlength: "Минимум две буквы",
+            },
+            windowName:{
+                required: "Имя обязательно",
+                minlength: "Минимум две буквы",
+              },
+            popupCheck:{
+                required: "Требуется ваше согласие на обработку",
+            },
+            popupTel: {
+              required: "Телефон обязателен",
+              minlength: "Телефон не короче 10 цифр",
+            }, 
+            windowPhone: {
+                required: "Телефон обязателен",
+                minlength: "Телефон не короче 10 цифр",
+              },
+            popupMail:{
+                required: "Введите почту",
+                email: "почта в формате domain@mail.com",
+            },
+          },
+    });
+
+    //question-form
+    $('.question__form').validate({
+        errorClass: "invalid",
+        errorElement: "div",
+        rules:{
+            questionName: {
+                required: true,
+                minlength: 2
+            },
+            questionPhone:{
+                required: true,
+                minlength: 18
+            },
+            questionArea: {
+                required: true
+            }
+        },
+        messages: {
+            questionName:{
+                required: "Имя обязательно",
+                minlength: "Минимум две буквы",
+              },
+              questionPhone: {
+                required: "Телефон обязателен",
+                minlength: "Телефон не короче 10 цифр",
+              },
+              questionArea:{
+                  required: "Не забудьте задать свой вопрос.",
+              }
+        },
+
+    });
 
 });
