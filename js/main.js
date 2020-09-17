@@ -9,12 +9,34 @@ $(document).ready(function () {
         $('.mobile__burger,.mobile__nav').removeClass('active');
         $('body').removeClass('lock');
     });
-    //arrow 
+    //form-arrow 
     $('.m-q__select').click(function(event){
         $('.m-q__select-wrapper').toggleClass('active');
     });
-
+    //popup
+    var mainModal = $('.pop-up'),
+        link = $('button[data-popup="true"]'),
+        close = $('.pop-up__close'),
+        popupName = $('.pop-up__title');
     
+    link.on('click', function(){
+        popupName.text ($(this).attr('data-heading'));
+        mainModal.fadeIn();
+    });
+    close.on('click', function(){
+        mainModal.fadeOut();
+    });
+    $(document).keydown(function(event) { 
+        if (event.keyCode == 27) { 
+        mainModal.fadeOut();
+        }
+    });
+    //Закрытие на клик за пределами поля!!!
+    mainModal.click(function(e) {
+        if ($(e.target).closest('.pop-up__dialog').length == 0){
+            $(this).fadeOut();					
+        }
+    });
     //Sticky navbar
     window.onscroll = function() {myFunction();};
 
@@ -32,7 +54,9 @@ $(document).ready(function () {
             navbar.classList.remove("sticky");
         }
     }
-     //slider
+    //popup
+    
+    //slider
      var swiper = new Swiper('.swiper-container', {
         // loop: true,
         navigation: {

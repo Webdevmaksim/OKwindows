@@ -54,6 +54,10 @@
     .sticky + .hero 
         padding-top: 0
     //hover disable
+    .header
+        &__button
+            &:hover
+                background-color: lighten($orange, 10% )
     .recomend
         &__icon
             &:hover
@@ -154,15 +158,17 @@
             padding-top: 5.5rem
     .main-form
         &__input-group
-            &:nth-of-type(-n+2)
-                display: block
-                margin: auto
-                margin-bottom: 2rem        
+            &:nth-of-type(1)
+                margin-right: 0
+            &:nth-of-type(2)
+                margin-bottom: 2rem
+        &__button
+            min-width: 22.71rem
+            padding: 1.392rem 2.5rem
     .window-types
         padding-top: 6.5rem
-        &__input
-            margin: auto
-            display: block   
+        &__form
+            text-align: center
     .why
         background-position: -98rem  
         padding-top: 6.5rem
@@ -203,8 +209,11 @@
             &--right
                 padding-right: 0
     .question
+        &__form
+            text-align: center
         &__input-group
-            width: 100% !important
+           &:nth-of-type(1)
+               margin-right: 0
         &__textArea
             &-wrapper
                 max-width: 23rem
@@ -245,6 +254,15 @@
     .m-q
         &__select-wrapper
             max-width: 23rem
+        &__input-group
+            &:nth-of-type(1)
+                margin-right: 0
+    .more
+        &__input-group
+            &:nth-of-type(1)
+                margin-right: 0
+        &__button
+            min-width: 22.71rem
 @media screen and ( max-width: 375px )
     .hero
         &__title

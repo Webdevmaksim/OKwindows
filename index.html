@@ -34,7 +34,7 @@
                     <!-- /.contacs__numbers -->
                 </div>
                 <!-- /.header__contacts -->
-                <button class="button header__button">Заказать звонок!</button>
+                <button data-popup="true" data-heading="Заказать звонок" class="button header__button">Заказать звонок!</button>
             </div>
             <!-- /.header__wrapper -->
         </div>
@@ -144,7 +144,7 @@
                                         <!-- /.slide__promo-cell -->
                                     </div>
                                     <!-- /.slide__promo-block -->
-                                    <button class="slide__button button">
+                                    <button data-heading="Вызвать инжинера и получить стеклопакет в подарок" data-popup="true"  class="slide__button button">
                                         вызвать инженера сейчас!
                                     </button>
                                 </div>
@@ -173,7 +173,7 @@
                                         <!-- /.slide__promo-cell -->
                                     </div>
                                     <!-- /.slide__promo-block -->
-                                    <button class="slide__button button">
+                                    <button data-heading="Заказать окна с ламинацией" data-popup="true" class="slide__button button">
                                         заказать окна с ламинацией!
                                     </button>
                                 </div>
@@ -202,7 +202,7 @@
                                         <!-- /.slide__promo-cell -->
                                     </div>
                                     <!-- /.slide__promo-block -->
-                                    <button class="slide__button button">
+                                    <button data-heading="Заказать окна с сеткой" data-popup="true" class="slide__button button">
                                         заказать окна с сеткой!
                                     </button>
                                 </div>
@@ -607,11 +607,11 @@
         <div class="container">
             <form action="#" class="question__form">
                 <div class="question__input-group">
-                    <input type="text" class="input input__name input__name--fix">
+                    <input placeholder="Введите ваше имя..." type="text" class="input input__name input__name--fix">
                 </div>
                 <!-- /.question__input-group -->
                 <div class="question__input-group">
-                    <input type="tel" class="input input__phone input__phone--fix">
+                    <input placeholder="Введите ваш телефон..." type="tel" class="input input__phone input__phone--fix">
                 </div>
                 <!-- /.question__input-group -->
                 <div class="question__input-group question__textArea-wrapper">
@@ -790,8 +790,8 @@
                 <p class="more__subtitle">
                     Закажите бесплатную консультацию нашего специалиста!
                 </p>
-                <div class="more__input-group"><input type="text" class="input more__input input__name"></div>
-                <div class="more__input-group"><input type="tel" class="input more__input input__phone"></div>
+                <div class="more__input-group"><input placeholder="Ведите ваше имя..." type="text" class="input more__input input__name"></div>
+                <div class="more__input-group"><input placeholder="Введите ваш телефон..." type="tel" class="input more__input input__phone"></div>
                 <button class="button more__button">
                     заказать консультацию!
                 </button>
@@ -885,8 +885,13 @@
                 <p class="m-q__subtitle">
                     Закажите бесплатную консультацию нашего специалиста!
                 </p>
-                <div class="m-q__input-group"><input type="text" class="input m-q__input input__name"></div>
-                <div class="m-q__input-group"><input type="tel" class="input m-q__input input__phone"></div>
+                <div class="m-q__input-group">
+                    <input placeholder="Введите ваше имя..." type="text" class="input m-q__input input__name">
+                </div>
+
+                <div class="m-q__input-group">
+                    <input placeholder="Введите ваш телефон..." type="tel" class="input m-q__input input__phone">
+                </div>
                 <div class="m-q__input-group m-q__select-wrapper">
                     <select class="m-q__select" name="mQmore" id="mQmore">
                         <option selected disabled>Выберите тип услуги</option>
@@ -895,7 +900,7 @@
                         <option value="3">Ремонт окон</option>
                     </select>
                 </div>
-                <button class="button more__button">
+                <button class="button m-q__button more__button">
                     заказать консультацию!
                 </button>
                 <p class="policy main-form__policy">
@@ -947,6 +952,36 @@
         </p>
     </footer>
     <!-- /.footer -->
+    <div class="pop-up">
+        <div class="pop-up__dialog">
+            <h3 class="pop-up__title">
+                заголовок
+            </h3>
+            <button class="pop-up__close">&times;</button>
+            <form action="#" class="pop-up__form">
+                <div class="pop-up__input-group">
+                    <label class="pop-up__label" for="popName">Имя</label>
+                    <input id="popName" class="pop-up__input" type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="pop-up__input-group">
+                    <label class="pop-up__label" for="popTel">Телефон</label>
+                    <input id="popTel" class="pop-up__input" type="tel" placeholder="Введите ваш телефон">
+                </div>
+                <div class="pop-up__input-group">
+                    <label class="pop-up__label" for="popMail">Email</label>
+                    <input id="popMail" class="pop-up__input" type="email" placeholder="Введите ваш e-mail">
+                </div>
+                <div class="pop-up__policy-wrapper">
+                    <input id="popCheck" type="checkbox">
+                    <label class="pop-up__checkbox" for="popCheck">Согласие на обработку данных</label>
+                </div>
+                <button class="button pop-up__button">
+                    Отправить данные
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- popup -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>

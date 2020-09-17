@@ -12,6 +12,9 @@
     &__input-group
         display: inline-block
         margin-bottom: 1rem
+        min-width: 22.71rem
+        &:nth-of-type(1)
+            margin-right: 0.9rem
     &__input
         background-color: #f8f8f8
     &__title
@@ -38,9 +41,9 @@
     &__select-wrapper
         display: block
         position: relative
-        max-width: 20.5rem
+        max-width: 22.71rem
         margin: auto
-        margin-bottom: 1rem
+        margin-bottom: 1.5rem
         &.active
             &::after
                 transform: scaleY(-1)
@@ -54,3 +57,6 @@
             height: 3rem
             background: url('../img/drop-d.png') no-repeat center
             transition: all 0.3s
+.m-q
+    &__button
+        min-width: 22.71rem

@@ -1,0 +1,68 @@
+.pop-up
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    z-index: 99999
+    background-color: rgba($dark, 0.6)
+    display: none
+    &__title
+        text-align: center
+        font-size: 1.8rem
+        max-width: 20rem
+    &__form
+        font-size: 1.2rem
+    &__dialog
+        border: 2px solid $light
+        background-color: $light
+        border-radius: 8px
+        padding: 1.5rem
+        position: relative
+        max-width: fit-content
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+    &__close
+        position: absolute
+        right: 0.5rem
+        top: 0.5rem
+        border-radius: 50%
+        border: none
+        background-color: transparent
+        color: $dark
+        font-size: 1.5rem
+        cursor: pointer
+        outline: none
+    &__input-group
+        position: relative
+        border: 2px solid $dark
+        background-color: $light
+        border-radius: 7px
+        margin-bottom: 2rem
+        padding: 0.4rem
+        &:nth-of-type(3)
+            margin-bottom: 2rem
+    &__input
+        border: none
+        min-height: 2rem
+        width: 100%
+        outline: none
+    &__label
+        position: absolute
+        color: $dark
+        background-color: $light
+        top: 0
+        left: 50%
+        transform: translate(-50%,-50%)
+        z-index: 999999999999
+        padding: 0 5px
+    &__policy-wrapper
+        margin-bottom: 1rem
+    &__button
+        width: 100%
+        padding: 0.7rem
+    &__checkbox
+        &:checked
+            background-color: red
