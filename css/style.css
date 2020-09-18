@@ -1429,8 +1429,7 @@ template {
     color: #2283aa;
     font-size: 2rem; }
   .more__input {
-    background-color: #f8f8f8;
-    margin-bottom: 1rem; }
+    background-color: #f8f8f8; }
   .more__button {
     display: block;
     margin: auto;
@@ -1438,7 +1437,11 @@ template {
     margin-bottom: 1.8rem; }
   .more__input-group {
     display: inline-block;
-    min-width: 22.71rem; }
+    min-width: 22.71rem;
+    position: relative;
+    margin-bottom: 2rem; }
+    .more__input-group div.invalid {
+      top: 4.5rem; }
     .more__input-group:nth-of-type(1) {
       margin-right: 0.9rem; }
 
@@ -1547,8 +1550,11 @@ template {
     border-image: url("../img/border-b.png") 6 stretch; }
   .m-q__input-group {
     display: inline-block;
-    margin-bottom: 1rem;
-    min-width: 22.71rem; }
+    margin-bottom: 2rem;
+    min-width: 22.71rem;
+    position: relative; }
+    .m-q__input-group div.invalid {
+      top: 4.5rem; }
     .m-q__input-group:nth-of-type(1) {
       margin-right: 0.9rem; }
   .m-q__input {
@@ -1581,7 +1587,7 @@ template {
     position: relative;
     max-width: 22.71rem;
     margin: auto;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 2.5rem; }
     .m-q__select-wrapper.active::after {
       transform: scaleY(-1); }
     .m-q__select-wrapper::after {

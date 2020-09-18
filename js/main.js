@@ -143,9 +143,10 @@ $(document).ready(function () {
         .toggleClass('q-a__description--active');
     });
     //form validate
-    $('.pop-up__form,.main-form').validate({
-        errorClass: "invalid",
+    //popup-form
+    $('.pop-up__form').validate({
         errorElement: "div",
+        errorClass: "invalid",
         rules: {
             // Строчное правило
             // Правило-объект(Блок)
@@ -165,6 +166,34 @@ $(document).ready(function () {
             popupCheck: {
                 required: true
             },
+            
+            
+          },  //Сообщения
+          messages: {
+            popupName:{
+              required: "Имя обязательно",
+              minlength: "Минимум две буквы",
+            },
+            
+            popupCheck:{
+                required: "Требуется ваше согласие на обработку",
+            },
+            popupTel: {
+              required: "Телефон обязателен",
+              minlength: "Телефон не короче 10 цифр",
+            }, 
+            
+            popupMail:{
+                required: "Введите почту",
+                email: "почта в формате domain@mail.com",
+            },
+          },
+    });
+    //main-form
+    $('.main-form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
             windowName:{
                 required: true,
                 minlength: 2
@@ -173,38 +202,24 @@ $(document).ready(function () {
                 required: true,
                 minlength: 18
             },
-          },  //Сообщения
-          messages: {
-            popupName:{
-              required: "Имя обязательно",
-              minlength: "Минимум две буквы",
-            },
+            
+        },
+        messages: {
             windowName:{
                 required: "Имя обязательно",
                 minlength: "Минимум две буквы",
-              },
-            popupCheck:{
-                required: "Требуется ваше согласие на обработку",
             },
-            popupTel: {
-              required: "Телефон обязателен",
-              minlength: "Телефон не короче 10 цифр",
-            }, 
             windowPhone: {
                 required: "Телефон обязателен",
                 minlength: "Телефон не короче 10 цифр",
-              },
-            popupMail:{
-                required: "Введите почту",
-                email: "почта в формате domain@mail.com",
             },
-          },
-    });
+        },
 
+    });
     //question-form
     $('.question__form').validate({
-        errorClass: "invalid",
         errorElement: "div",
+        errorClass: "invalid",
         rules:{
             questionName: {
                 required: true,
@@ -232,6 +247,62 @@ $(document).ready(function () {
               }
         },
 
+    });
+    //more-form
+    $('.more__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            moreName: {
+                required: true,
+                minlength: 2
+            },
+            morePhone:{
+                required: true,
+                minlength: 18
+            },
+        },
+        messages: {
+            moreName:{
+                required: "Имя обязательно",
+                minlength: "Минимум две буквы"
+              },
+            morePhone: {
+                required: "Телефон обязателен",
+                minlength: "Телефон не короче 10 цифр"
+            }
+        },
+    });
+    //select-form
+    $('.m-q__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            mqName:{
+                required: true,
+                minlength: 2
+            },
+            mqPhone: {
+                required: true,
+                minlength: 18
+            },
+            mQmore: {
+                required: true
+            }
+        },
+        messages:{
+            mqName: {
+                required: "Имя обязательно",
+                minlength: "Минимум две буквы"
+            },
+            mqPhone: {
+                required: "Телефон обязателен",
+                minlength: "Телефон не короче 10 цифр"
+            },
+            mQmore: {
+                required: "Пожалуйста выберите услугу."
+            }
+        },
     });
 
 });

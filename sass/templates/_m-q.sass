@@ -11,8 +11,11 @@
         border-image: url('../img/border-b.png') 6 stretch 
     &__input-group
         display: inline-block
-        margin-bottom: 1rem
+        margin-bottom: 2rem
         min-width: 22.71rem
+        position: relative
+        & div.invalid
+            top: 4.5rem
         &:nth-of-type(1)
             margin-right: 0.9rem
     &__input
@@ -43,7 +46,7 @@
         position: relative
         max-width: 22.71rem
         margin: auto
-        margin-bottom: 1.5rem
+        margin-bottom: 2.5rem
         &.active
             &::after
                 transform: scaleY(-1)
