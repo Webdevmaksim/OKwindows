@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
     <header class="header">
@@ -322,7 +322,7 @@
                 <!-- /.description__contacts -->
             </div>
             <!-- /.window-type__description -->
-            <form class="window-types__form main-form form">
+            <form action="./php/send.php" method="POST" class="window-types__form main-form form">
                 <div class="main-form__input-group input-group">
                     <input autocomplete="off" placeholder="Введите ваше имя..." name="windowName" type="text" class="input window-types__input input__name">
                 </div>
@@ -433,7 +433,7 @@
             <!-- /.warranty__row -->
             <div class="warranty__row">
                 <div class="warranty__agent">
-                    <img src="./img/warranty/warranty--agent.png" alt="агент"></div>
+                    <img src="./img/warranty/warranty--agent.jpg" alt="агент"></div>
                 <div class="warranty__description">
                     <h3 class="warranty__subtitle">
                         Иструкция по эксплуатации оконных конструкций
@@ -480,7 +480,7 @@
                 <div class="certificates__col">
                     <div class="certificates__item">
                         <a href="./img/certificates/main-certificate.jpg" data-fancybox>
-                        <img alt="" src="./img/certificates/certificate--1.png" /> 
+                        <img alt="" src="./img/certificates/certificate--1.jpg" /> 
                     </a>
                     </div>
                 </div>
@@ -488,7 +488,7 @@
                 <div class="certificates__col">
                     <div class="certificates__item">
                         <a href="./img/certificates/main-certificate.jpg" data-fancybox>
-                        <img alt="" src="./img/certificates/certificate--2.png" /> 
+                        <img alt="" src="./img/certificates/certificate--2.jpg" /> 
                     </a>
                     </div>
                 </div>
@@ -496,7 +496,7 @@
                 <div class="certificates__col">
                     <div class="certificates__item">
                         <a href="./img/certificates/main-certificate.jpg" data-fancybox>
-                        <img alt="" src="./img/certificates/certificate--3.png" /> 
+                        <img alt="" src="./img/certificates/certificate--3.jpg" /> 
                     </a>
                     </div>
                 </div>
@@ -504,7 +504,7 @@
                 <div class="certificates__col">
                     <div class="certificates__item">
                         <a href="./img/certificates/main-certificate.jpg" data-fancybox>
-                        <img alt="" src="./img/certificates/certificate--4.png" /> 
+                        <img alt="" src="./img/certificates/certificate--4.jpg" /> 
                     </a>
                     </div>
                 </div>
@@ -822,7 +822,7 @@
                     <li data-tab="8" class="q-a__item">В чем состоит преимущество ПВХ?</li>
                 </ul>
                 <div class="q-a__divider">
-                    <img loading="lazy" src="../img/q-a_divider.png" alt="разделитель">
+                    <img loading="lazy" src="./img/q-a_divider.png" alt="разделитель">
                 </div>
                 <div class="q-a__text">
                     <p data-tab="1" class="q-a__description q-a__description--active">ПВХ является поливинилхлоридом, самым универсальным термопластичным полимером, как правило, линейного строения. ПВХ - это твердый белый продукт, созданный путем суспензионной полимеризации* винилхлорида. ПВХ изготавливают из натурального сырья: природного газа, нефти, поваренной соли. Готовый материал является химически стабильным, для человека он не представляет никакой опасности. * Полимеризацией называют реакцию получения из мономера полимера.</p>
@@ -986,6 +986,7 @@
     <script src="./js/swiper.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/validate.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/main.min.js"></script>
 </body>
 </html>

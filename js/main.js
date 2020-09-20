@@ -214,6 +214,22 @@ $(document).ready(function () {
                 minlength: "Телефон не короче 10 цифр",
             },
         },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "./php/send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                   
+                    // tModal.toggleClass('t-modal--visible');
+                    $(form)[0].reset();
+                    
+                },
+                    error: function(response){
+                    console.log('Ошибка запроса ' + response);
+                }
+            });
+          }
 
     });
     //question-form
@@ -304,5 +320,6 @@ $(document).ready(function () {
             }
         },
     });
-
+    //phone mask
+    $('[type=tel]').mask('+375(29) 000-00-00', {placeholder: '+375 (__) ___-__-__ '});
 });
