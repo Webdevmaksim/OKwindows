@@ -559,6 +559,7 @@ template {
     min-height: 8.5rem;
     outline: none;
     pointer-events: none;
+    overflow: hidden;
     resize: none;
     margin-bottom: 1rem; }
   .pop-up__form {
