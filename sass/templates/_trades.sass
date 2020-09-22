@@ -9,7 +9,7 @@
         color: #2e2e2e
         font-weight: 400
     &__row
-        display: flex
+        display: flex 
         flex-wrap: wrap
     &__image
         width: 10.5rem
@@ -36,11 +36,11 @@
             padding-right: 60%
     &__col
         &:nth-of-type(-1n+4)
-            flex-basis: 25%
-        &:nth-of-type(n+5)
-            flex-basis: 33.33%
-        &:nth-of-type(n+8)
-            flex-basis: 50%               
+            width: 25%
+        &--mid-row
+            width: 33.33%
+        &--last-row
+            width: 50%
     &__label
         text-transform: uppercase
         font-weight: bold

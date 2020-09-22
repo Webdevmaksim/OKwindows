@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Окновияз</title>
     <link rel="icon" href="./img/window.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap">
     <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -433,7 +433,7 @@
             <!-- /.warranty__row -->
             <div class="warranty__row">
                 <div class="warranty__agent">
-                    <img src="./img/warranty/warranty--agent.jpg" alt="агент"></div>
+                    <img src="./img/warranty/warranty--agent.png" alt="агент"></div>
                 <div class="warranty__description">
                     <h3 class="warranty__subtitle">
                         Иструкция по эксплуатации оконных конструкций
@@ -551,7 +551,7 @@
                     <!-- /.trades__item -->
                 </div>
                 <!-- /.trades__col -->
-                <div class="trades__col">
+                <div class="trades__col trades__col--mid-row">
                     <div class="trades__item trades__item--left">
                         <div class="trades__image"><img loading="lazy" src="./img/trades/5.jpg" alt="остекление" class="trades__img"></div>
                         <span class="trades__label">Остекление загородных домов!</span>
@@ -559,7 +559,7 @@
                     <!-- /.trades__item -->
                 </div>
                 <!-- /.trades__col -->
-                <div class="trades__col">
+                <div class="trades__col trades__col--mid-row">
                     <div class="trades__item ">
                         <div class="trades__image"><img loading="lazy" src="./img/trades/6.jpg" alt="электрика" class="trades__img"></div>
                         <span class="trades__label">Электромонтажные работы!</span>
@@ -567,7 +567,7 @@
                     <!-- /.trades__item -->
                 </div>
                 <!-- /.trades__col -->
-                <div class="trades__col">
+                <div class="trades__col trades__col--mid-row">
                     <div class="trades__item trades__item--right">
                         <div class="trades__image"><img loading="lazy" src="./img/trades/7.jpg" alt="объём" class="trades__img"></div>
                         <span class="trades__label">Увеличение внутреннего объёма!</span>
@@ -575,7 +575,7 @@
                     <!-- /.trades__item -->
                 </div>
                 <!-- /.trades__col -->
-                <div class="trades__col">
+                <div class="trades__col trades__col--last-row">
                     <div class="trades__item trades__item--left trades__item--last2">
                         <div class="trades__image"><img loading="lazy" src="./img/trades/8.jpg" alt="фурнитура" class="trades__img"></div>
                         <span class="trades__label">изготовление шкафов и тумбочек!</span>
@@ -583,7 +583,7 @@
                     <!-- /.trades__item -->
                 </div>
                 <!-- /.trades__col -->
-                <div class="trades__col">
+                <div class="trades__col trades__col--last-row">
                     <div class="trades__item trades__item--right trades__item--last2">
                         <div class="trades__image"><img loading="lazy" src="./img/trades/9.jpg" alt="настил полов" class="trades__img"></div>
                         <span class="trades__label">Настил полов!</span>
@@ -605,7 +605,7 @@
             Хотите остаться довольными после замены окон на долгие года? <br> Со своей стороны наши мастера сделают все, чтобы Вы остались довольны своим выбором!
         </p>
         <div class="container">
-            <form action="#" class="question__form">
+            <form action="./php/question.php" class="question__form">
                 <div class="question__input-group">
                     <input name="questionName" autocomplete="off" placeholder="Введите ваше имя..." type="text" class="input input__name input__name--fix">
                 </div>
@@ -783,7 +783,7 @@
     <!-- /.mistakes -->
     <section class="more">
         <div class="container">
-            <form action="#" class="more__form">
+            <form action="./php/more.php" class="more__form">
                 <h2 class="more__title">
                     Хотите узнать больше про окна?
                 </h2>
@@ -878,7 +878,7 @@
     <!-- /.92 -->
     <section class="m-q">
         <div class="container">
-            <form action="#" class="m-q__form">
+            <form action="./php/spec.php" class="m-q__form">
                 <h2 class="m-q__title">
                     Хотите узнать больше про окна?
                 </h2>
@@ -895,9 +895,9 @@
                 <div class="m-q__input-group m-q__select-wrapper">
                     <select class="m-q__select" name="mQmore" id="mQmore">
                         <option selected disabled>Выберите тип услуги</option>
-                        <option value="1">Установка окон</option>
-                        <option value="2">Обслуживание</option>
-                        <option value="3">Ремонт окон</option>
+                        <option value="Установка окон">Установка окон</option>
+                        <option value="Обслуживание окон">Обслуживание окон</option>
+                        <option value="Ремонт окон">Ремонт окон</option>
                     </select>
                 </div>
                 <button class="button m-q__button more__button">
@@ -937,7 +937,7 @@
                     <!-- /.contacs__numbers -->
                 </div>
                 <!-- /.header__contacts -->
-                <button class="button footer__button header__button">Заказать звонок!</button>
+                <button data-popup="true" data-heading="Заказать звонок" class="button footer__button header__button">Заказать звонок!</button>
             </div>
             <!-- /.header__wrapper -->
         </div>
@@ -954,11 +954,12 @@
     <!-- /.footer -->
     <div class="pop-up">
         <div class="pop-up__dialog">
-            <h3 class="pop-up__title">
+            <!-- <h3 class="pop-up__title">
                 заголовок
-            </h3>
+            </h3> -->
             <button class="pop-up__close">&times;</button>
-            <form action="#" class="pop-up__form form">
+            <form action="./php/pop.php" method="POST" class="pop-up__form form">
+                        <textarea name="popupTitle" class="pop-up__title"></textarea>
                 <div class="pop-up__input-group">
                     <label class="pop-up__label" for="popName">Имя</label>
                     <input name="popupName" autocomplete="off" id="popName" class="pop-up__input" type="text" placeholder="Введите ваше имя">
@@ -982,6 +983,19 @@
         </div>
     </div>
     <!-- popup -->
+    <div class="t-modal">
+        <div class="t-modal__dialog">
+            <span class="t-modal__close">&times;</span>
+            <h3 class="t-modal__header">
+                Спасибо за проявленное внимание!</h3>
+                <!-- /.t-modal__header -->
+            <div class="t-modal__content">
+                <span class="t-modal__please">Вы так же можете написать мне в вк: </span>
+                <a href="https://vk.com/id6696432" target="_blank"><img src="./img/vk.svg" alt="вк"
+                        class="t-modal__vk"></a></div><!-- /.t-modal__content -->
+        </div><!-- /.t-modal__dialog -->
+    </div>
+    <!-- /.t-modal -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>

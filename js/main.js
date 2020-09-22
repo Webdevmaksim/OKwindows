@@ -20,7 +20,7 @@ $(document).ready(function () {
         popupName = $('.pop-up__title');
     
     link.on('click', function(){
-        popupName.text ($(this).attr('data-heading'));
+        popupName.val ($(this).attr('data-heading'));
         mainModal.fadeIn();
     });
     close.on('click', function(){
@@ -188,6 +188,21 @@ $(document).ready(function () {
                 email: "почта в формате domain@mail.com",
             },
           },
+          submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "./php/pop.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    mainModal.fadeOut();
+                    tModal.toggleClass('t-modal--visible');
+                },
+                    error: function(response){
+                    console.log('Ошибка запроса ' + response);
+                }
+            });
+          }
     });
     //main-form
     $('.main-form').validate({
@@ -220,10 +235,8 @@ $(document).ready(function () {
                 url: "./php/send.php",
                 data: $(form).serialize(),
                 success: function (response) {
-                   
-                    // tModal.toggleClass('t-modal--visible');
                     $(form)[0].reset();
-                    
+                    tModal.toggleClass('t-modal--visible');
                 },
                     error: function(response){
                     console.log('Ошибка запроса ' + response);
@@ -262,7 +275,20 @@ $(document).ready(function () {
                   required: "Не забудьте задать свой вопрос.",
               }
         },
-
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "./php/question.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    tModal.toggleClass('t-modal--visible');
+                },
+                    error: function(response){
+                    console.log('Ошибка запроса ' + response);
+                }
+            });
+          }
     });
     //more-form
     $('.more__form').validate({
@@ -288,6 +314,20 @@ $(document).ready(function () {
                 minlength: "Телефон не короче 10 цифр"
             }
         },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "./php/more.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    tModal.toggleClass('t-modal--visible');
+                },
+                    error: function(response){
+                    console.log('Ошибка запроса ' + response);
+                }
+            });
+          }
     });
     //select-form
     $('.m-q__form').validate({
@@ -319,7 +359,40 @@ $(document).ready(function () {
                 required: "Пожалуйста выберите услугу."
             }
         },
+        submitHandler: function(form) {
+            $.ajax({
+                type: "POST",
+                url: "./php/spec.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    $(form)[0].reset();
+                    tModal.toggleClass('t-modal--visible');
+                },
+                    error: function(response){
+                    console.log('Ошибка запроса ' + response);
+                }
+            });
+          }
     });
+    //Модальное окно благодарности
+    var tModal = $('.t-modal'),
+        TcloseBtn = $('.t-modal__close');
+
+        TcloseBtn.on('click', function(){
+          tModal.removeClass('t-modal--visible');
+      });
+
+      $(document).keydown(function(event) { 
+        if (event.keyCode == 27) { 
+        $('.t-modal').removeClass('t-modal--visible');
+        }
+        });
+        //Закрытие на клик за пределами поля!!!
+        $('.t-modal').click(function(e) {
+          if ($(e.target).closest('.t-modal__dialog').length == 0){
+            $(this).removeClass('t-modal--visible');					
+          }
+        });
     //phone mask
-    $('[type=tel]').mask('+375(29) 000-00-00', {placeholder: '+375 (__) ___-__-__ '});
+    $('[type=tel]').mask('+375(00) 000-00-00', {placeholder: '+375 (__) ___-__-__ '});  
 });

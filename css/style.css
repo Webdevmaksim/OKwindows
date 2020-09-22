@@ -554,7 +554,13 @@ template {
   .pop-up__title {
     text-align: center;
     font-size: 1.8rem;
-    max-width: 20rem; }
+    max-width: 20rem;
+    border: none;
+    min-height: 8.5rem;
+    outline: none;
+    pointer-events: none;
+    resize: none;
+    margin-bottom: 1rem; }
   .pop-up__form {
     font-size: 1.2rem; }
   .pop-up__dialog {
@@ -615,7 +621,7 @@ template {
     background-color: red; }
 
 .hero {
-  background: url("../img/main/hero-bg.jpg") center no-repeat;
+  background: url("../img/main/hero-bg.png") center no-repeat;
   background-size: cover;
   min-height: 44.21rem;
   padding-top: 1.71rem; }
@@ -1060,6 +1066,60 @@ template {
       transform: rotate(45deg);
       border-radius: 5px; }
 
+.t-modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 99999999;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 39, 39, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .t-modal__content {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .t-modal__please {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    color: #FFFFFF; }
+  .t-modal__vk {
+    width: 2.5rem;
+    height: 2.5rem; }
+  .t-modal--visible {
+    opacity: 1;
+    visibility: visible; }
+  .t-modal__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 0.5s;
+    outline: none;
+    color: #f39c12; }
+    .t-modal__close:hover {
+      font-size: 2.5rem; }
+  .t-modal__dialog {
+    position: relative;
+    padding: 2.357rem 3.5rem 1.928rem;
+    background: #272727;
+    background-size: cover;
+    max-width: 36.36rem;
+    border: 2px solid #f39c12;
+    border-radius: 0.5rem; }
+  .t-modal__header {
+    text-align: center;
+    line-height: 2;
+    color: #FFFFFF; }
+
 .why {
   background: url("../img/why/why-bg.png") center no-repeat;
   background-size: cover;
@@ -1209,11 +1269,11 @@ template {
     .trades__item--right {
       padding-right: 60%; }
   .trades__col:nth-of-type(-1n+4) {
-    flex-basis: 25%; }
-  .trades__col:nth-of-type(n+5) {
-    flex-basis: 33.33%; }
-  .trades__col:nth-of-type(n+8) {
-    flex-basis: 50%; }
+    width: 25%; }
+  .trades__col--mid-row {
+    width: 33.33%; }
+  .trades__col--last-row {
+    width: 50%; }
   .trades__label {
     text-transform: uppercase;
     font-weight: bold;
