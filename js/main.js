@@ -75,7 +75,7 @@ $(document).ready(function () {
         }
       });
     // Set the date we're counting down to
-    var countDownDate = new Date("sep 29, 2020 15:37:25").getTime();
+    var countDownDate = new Date("oct 30, 2020 15:37:25").getTime();
     var cabinDownDate = new Date("nov 29, 2020 18:38:20").getTime();
     var windowDownDate = new Date("oct 8, 2020 10:44:13").getTime();
     
